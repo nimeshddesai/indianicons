@@ -4,10 +4,9 @@ title: "Hon Captain Bana Singh"
 date: 2024-06-16
 categories: military
 ---
+##### (6 January 1949)
 
 <img src="/images/bana_singh.jpg" alt="Bana Singh Image" class="circular-img" />
-
-(6 January 1949)
 
 Bana Singh was born on 6 January 1949 in a tiny village of Kadyal near Jammu. At the age of 19, he joined the Jammu and Kashmir Light Infantry (JAK LI). In 1987, Pakistan forces successfully occupied a key peak in the Siachen glacier within Indian territory at 21,153 feet and named it Quaid Post. The Indian army made an unsuccessful attempt to recapture the post in May 1987 under the patrolling unit. It resulted in the death of 10 Indian soldiers including the unit leader Second Lieutenant Rajiv Pande.
 

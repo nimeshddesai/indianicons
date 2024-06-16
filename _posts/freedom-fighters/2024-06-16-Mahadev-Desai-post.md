@@ -4,10 +4,10 @@ title: "Mahadev Desai"
 date: 2024-06-16
 categories: freedom-fighters
 ---
+##### (1 January 1892 – 15 August 1942)
 
 <img src="/images/mahadev_desai.jpg" alt="Mahadev Desai Image" class="circular-img" />
 
-(1 January 1892 – 15 August 1942)
 
 Mahadev Desai was born on 1 January 1892 in the village of Saras in Surat district of Gujarat. Desai belonged to a poor family but was a bright student. He passed his LLB examination by the end of 1913. He decided to stay in Ahmedabad, where in 1915, he met Mahatma Gandhi for the first time. He became a disciple of Gandhi and stayed with him for the rest of his life. 
 
