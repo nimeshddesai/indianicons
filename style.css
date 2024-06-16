@@ -1,0 +1,10 @@
+
+.circular-img {
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #FF9933;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
