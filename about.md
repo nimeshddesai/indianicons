@@ -21,16 +21,18 @@ Over the next 100 days, we'll be adding one or more stories daily. Do check thos
 Meanwhile, do try this [Indian Heroes Quiz][indianheroesquiz] to check your knowledge.
 
 
-
-
 ---
 
+<br>
 __Vision__:
-To help build a knowledgeable society that remembers its heroes with pride.
+*To help build a knowledgeable society that remembers its heroes with pride.*
 
 __Mission__:
-Spread information about Indian heroes to each corner of the country and across the world.
+*Spread information about Indian heroes to every corner of the country and across the world.*
+<br>
 
 ---
+
+<br>
 
 [indianheroesquiz]: https://indianheroesquiz.netlify.app/
