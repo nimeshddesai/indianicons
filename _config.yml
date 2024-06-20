@@ -39,6 +39,7 @@ header_pages:
   - writers.md
   - luminaries.md
   - about.md
+  - settings.md
 
 # Build settings
 theme: minima
