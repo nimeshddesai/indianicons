@@ -4,10 +4,6 @@
 
 @import "minima";
 
-body {
-	text-align: justify;
-}
-
 .site-title::before {
 	content: url("/logo.png");
 	display: inline-block;
@@ -16,3 +12,94 @@ body {
 	top: 15px;
 }
 
+button {
+    padding: 10px 20px;
+	height: auto;
+	width: fit-content;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Light theme */
+body {
+	text-align: justify;
+	--background-color: #ffffff;
+	--text-color: #000000;
+	--link-color: #1a0dab;
+	--trigger-background-color: #ffffff;
+	--trigger-text-color: #000000;
+}
+
+body.light-mode {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body.light-mode a {
+	color: var(--link-color);
+}
+
+body.light-mode .trigger{
+	background-color: var(--trigger-background-color);
+	color: var(--trigger-text-color);
+}
+
+body.light-mode .trigger a {
+	color: var(--trigger-text-color);
+}
+
+body.light-mode .site-title {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body.light-mode .site-title a {
+	color: var(--text-color);
+}
+
+body.light-mode table {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+/* Dark theme */
+body.dark-mode {
+	--background-color: #121212;
+	--text-color: #e0e0e0;
+	--link-color: #bb86fc;
+	--trigger-background-color: #1f1f1f;
+	--trigger-text-color: #e0e0e0;
+
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body.dark-mode a {
+	color: var(--link-color);
+}
+
+body.dark-mode .trigger {
+	background-color: var(--trigger-background-color);
+	color: var(--trigger-text-color);
+}
+
+body.dark-mode .trigger a {
+	color: var(--trigger-text-color);
+}
+
+body.dark-mode .site-title {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body.dark-mode .site-title a {
+	color: var(--text-color);
+}
+
+body.dark-mode table {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
