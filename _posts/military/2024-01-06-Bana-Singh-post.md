@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hon Captain Bana Singh"
-date: 2024-06-16
+date: 2024-01-06
 categories: military
 ---
 ##### (6 January 1949)

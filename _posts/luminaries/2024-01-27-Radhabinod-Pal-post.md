@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Radhabinod Pal"
-date: 2024-06-19
+date: 2024-01-27
 categories: luminaries
 ---
 ##### (27 January 1886 - 10 January 1967)

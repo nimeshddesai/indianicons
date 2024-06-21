@@ -3,7 +3,8 @@ layout: page
 title: "Luminaries"
 permalink: /luminaries/
 ---
-{% for post in site.categories.luminaries %}
+{% assign sorted_posts = site.categories.luminaries | sort: 'date' %}
+{% for post in sorted_posts %}
 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 <p>{{ post.excerpt }}</p>
 {% endfor %}
