@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mahadev Desai"
-date: 2024-06-16
+date: 2024-01-01
 categories: freedom-fighters
 ---
 ##### (1 January 1892 – 15 August 1942)
