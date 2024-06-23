@@ -16,4 +16,4 @@ Subbarow's achievements earned him a PhD and a Rockefeller Foundation Fellowship
 
 Despite spending most of his life in America, Subbarow remained an Indian citizen. His groundbreaking discoveries, though not widely recognized, have saved millions of lives worldwide. 
 
-__Trivia__ - *Interestingly, in his youth, Dr. Subbarow was associated with the Ramakrishna Mission and had aspirations of becoming a sanyasi (monk).*
+__Trivia__ : *Interestingly, in his youth, Dr. Subbarow was associated with the Ramakrishna Mission and had aspirations of becoming a sanyasi (monk).*
