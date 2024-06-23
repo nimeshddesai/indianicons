@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Lala Lajpat Rai"
-date: 2024-06-19
-categories: revolutionaries
+date: 2024-01-28
+categories:
+    - freedom-fighters
+    - revolutionaries
 ---
 ##### (28 January 1865 – 17 November 1928)
 
