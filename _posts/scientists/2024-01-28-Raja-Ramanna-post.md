@@ -17,3 +17,13 @@ A skilled administrator, Ramanna held several prestigious positions. He served a
 Dr. Ramanna received the Shanti Swarup Bhatnagar Prize for Science and Technology in 1963 and was awarded the Padma Vibhushan by the Government of India in 1975.
 
 __Trivia__ : *Dr. Raja Ramanna was a gifted musician and authored a book on music titled "The Structure of Music in Raga and Western Music."*
+
+---
+
+#### References:
+
+- [Raja Ramanna - Vigyan Prasar](https://vigyanprasar.gov.in/ramanna-raja/)
+- [Raja Ramanna - Atomic Heritage Foundation](https://www.atomicheritage.org/profile/raja-ramanna)
+- [Dr. Raja Ramanna - DRDO](https://www.drdo.gov.in/dr-raja-ramanna)
+
+---

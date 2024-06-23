@@ -15,3 +15,12 @@ During World War II, he became the first Indian to command a unit in 1942, seein
 On January 15, 1949, Cariappa became the first Indian Commander-in-Chief of the Indian Army. After retiring in 1953, he served as India’s High Commissioner to Australia and New Zealand. He was honored with the ‘Order of the Chief Commander of the Legion of Merit’ by U.S. President Harry S. Truman. In 1986, the Government of India conferred upon him the five-star rank of Field Marshal.
 
 __Trivia__ : *Field Marshal Cariappa became Commander-in-Chief of the Indian Army on January 15, which is now celebrated as Army Day in India.*
+
+---
+
+#### References:
+- [Who was Kodandera Madappa Cariappa: Independent India's First Army Chief - Indian Express](https://indianexpress.com/article/who-is/who-was-kodandera-madappa-cariappa-independent-indias-first-army-chief-bipin-rawat/)
+- [Field Marshal K.M. Cariappa - Honourpoint](https://www.honourpoint.in/profile/field-marshal-k-m-cariappa/)
+- [Field Marshal K.M. Cariappa: The Man Who Told Pakistan Not to Release His Captured Son - ThePrint](https://theprint.in/theprint-profile/field-marshal-km-cariappa-the-man-who-told-pakistan-not-to-release-his-captured-son/422342/)
+
+---

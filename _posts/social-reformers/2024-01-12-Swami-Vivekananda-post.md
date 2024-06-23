@@ -17,3 +17,12 @@ Hearing about the World's Parliament of Religions in Chicago, Vivekananda sailed
 Upon returning to India in 1897, Swamiji delivered lectures across the country, instilling pride in India's cultural heritage. He founded the Ramakrishna Mission and Belur Math, which, besides promoting Vedanta, engaged in social services like establishing schools, colleges, and hospitals. Swami Vivekananda's life inspired many, some of whom joined the Ramakrishna Math to dedicate their lives to helping others.
 
 __Trivia__ - *Swami Vivekananda’s birthday is celebrated as National Youth Day in India.*
+
+---
+
+#### References:
+- [Swami Vivekananda - Belur Math](https://belurmath.org/swami-vivekananda/)
+- [Swami Vivekananda - Jagran Josh](https://www.jagranjosh.com/general-knowledge/swami-vivekananda-1547214232-1)
+- [Swami Vivekananda - Cultural India](https://www.culturalindia.net/reformers/vivekananda.html)
+
+---

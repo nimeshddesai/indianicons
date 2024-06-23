@@ -16,3 +16,11 @@ Mahadev Desai began writing his diary from 13 November 1917 and continued writin
 Mahadev Desai was an outstanding writer, at ease with Gujarati, Bengali and English. He started translating English classics in Gujarati from his college days. He was a well-known translator and writer in Gujarati and had won several prizes and awards for his writings. He translated Rabindranath Tagore's work in Gujarati. He had also translated Gandhiji's autobiography, The Story of *My Experiments with Truth*, in English. His diary was published in 22 volumes after his death. Mahadev Desai was arrested several times for his involvement in various satyagraha. He died in the Aga Khan Palace of Pune where he was arrested along with Mahatma Gandhi and Kasturba Gandhi.
 
 __Trivia__ - *Mahadev Desai was the only person to accompany Mahatma Gandhi when Gandhi met with King George V during the Second round Table Conference.*
+
+---
+
+#### References:
+- [*Mahadev Desai* - MK Gandhi](https://www.mkgandhi.org/associates/Mahadev.htm)
+- [*Mahatma Gandhi's Surti Son Mahadev Desai* - Times of India](https://timesofindia.indiatimes.com/city/surat/mahatma-gandhis-surti-son-mahadev-desai/articleshow/71399801.cms)
+
+---

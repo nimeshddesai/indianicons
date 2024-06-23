@@ -19,3 +19,14 @@ After the publication, Bose spent two years in Europe, collaborating with top sc
 Bose was passionate about popularizing science and was a strong supporter of the Indian independence movement, believing that education and enlightenment were crucial for India's future. In 1954, the Indian government honored him with the Padma Vibhushan, and he was later appointed as National Professor. In 1958, he became a Fellow of the Royal Society.
 
 __Trivia__ : *While several scientists have received the Nobel Prize for research related to bosons and the Bose-Einstein Condensate, S. N. Bose himself never received it.*
+
+---
+
+#### References:
+- Book : *Bright Sparks - Indian Scientists* by Arvind Gupta
+- [Satyendra Nath Bose - Biography](https://www.biography.com/scientist/satyendra-nath-bose)
+- [Satyendra Nath Bose - Vigyan Prasar](https://vigyanprasar.gov.in/bose-satyendra-nath/)
+- [Satyendra Nath Bose - WBCHSE](https://wbchse.nic.in/html/satyendra.html)
+- [Satyendra Nath Bose - Famous Scientists](https://www.famousscientists.org/s-n-bose/)
+
+---
