@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Raja Ramanna"
-date: 2024-01-28
+date: 2020-01-28
+timeline: (28 January 1925 – 24 September 2004)
 categories: scientists
 ---
-##### (28 January 1925 – 24 September 2004)
 
 <img src="/images/Raja_Ramanna.jpg" alt="Raja Ramanna Image" class="circular-img" />
 

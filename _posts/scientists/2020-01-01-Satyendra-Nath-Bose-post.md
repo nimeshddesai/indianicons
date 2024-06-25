@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Satyendra Nath Bose"
-date: 2024-01-01
+date: 2020-01-01
+timeline: (1 January 1894 - 4 February 1974)
 categories: scientists
 ---
-##### (1 January 1894 - 4 February 1974)
 
 <img src="/images/satyendra-nath-bose.jpeg" alt="Satyendra Nath Bose Image" class="circular-img" />
 

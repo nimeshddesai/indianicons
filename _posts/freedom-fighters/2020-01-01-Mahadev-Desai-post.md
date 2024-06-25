@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Mahadev Desai"
-date: 2024-01-01
+date: 2020-01-01
+timeline: (1 January 1892 – 15 August 1942)
 categories: freedom-fighters
 ---
-##### (1 January 1892 – 15 August 1942)
 
 <img src="/images/mahadev_desai.jpg" alt="Mahadev Desai Image" class="circular-img" />
 

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Swami Vivekananda"
-date: 2024-01-12
+date: 2020-01-12
+timeline: (12 January 1863 – 4 July 1902)
 categories: social-reformers
 ---
-##### (12 January 1863 – 4 July 1902)
 
 <img src="/images/Swami-Vivekananda.jpeg" alt="Swami Vivekananda Image" class="circular-img" />
 

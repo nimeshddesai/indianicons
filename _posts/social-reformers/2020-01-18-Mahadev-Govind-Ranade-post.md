@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Mahadev Govind Ranade"
-date: 2024-01-18
+date: 2020-01-18
+timeline: (18 January 1842 – 16 January 1901)
 categories: social-reformers
 ---
-##### (18 January 1842 – 16 January 1901)
 
 <img src="/images/Mahadev_Govind_Ranade.jpg" alt="Mahadev Govind Ranade Image" class="circular-img" />
 

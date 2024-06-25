@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Field Marshal K M Cariappa"
-date: 2024-01-28
+date: 2020-01-28
+timeline: (28 January 1898 – 15 May 1993)
 categories: military
 ---
-##### (28 January 1898 – 15 May 1993)
 
 <img src="/images/km_cariappa.jpg" alt="Field Marshal K M Cariappa Image" class="circular-img" />
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Major Somnath Sharma"
-date: 2024-01-31
+date: 2020-01-31
 categories: military
 ---
 ##### (31 January 1923 – 3 November 1947)

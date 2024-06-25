@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Radha Binod Pal"
-date: 2024-01-27
+date: 2020-01-27
+timeline: (27 January 1886 - 10 January 1967)
 categories: luminaries
 ---
-##### (27 January 1886 - 10 January 1967)
 
 <img src="/images/Radhabinod-Pal.jpeg" alt="Radhabinod Pal Image" class="circular-img" />
 

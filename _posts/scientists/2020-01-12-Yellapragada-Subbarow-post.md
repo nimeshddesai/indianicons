@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Yellapragada Subbarow"
-date: 2024-01-12
+date: 2020-01-12
+timeline: (12 January 1895 – 8 August 1948)
 categories: scientists
 ---
-##### (12 January 1895 – 8 August 1948)
 
 <img src="/images/subbarow.jpeg" alt="Yellapragada Subbarow Image" class="circular-img" />
 

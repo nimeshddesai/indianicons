@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Lala Lajpat Rai"
-date: 2024-01-28
+date: 2020-01-28
+timeline: (28 January 1865 – 17 November 1928)
 categories:
     - freedom-fighters
     - revolutionaries
 ---
-##### (28 January 1865 – 17 November 1928)
 
 <img src="/images/Lala-Lajpat-Rai.jpg" alt="Lala Lajpat Rai Image" class="circular-img" />
 

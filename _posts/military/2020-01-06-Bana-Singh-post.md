@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Hon Captain Bana Singh"
-date: 2024-01-06
+date: 2020-01-06
+timeline: (6 January 1949)
 categories: military
 ---
-##### (6 January 1949)
 
 <img src="/images/bana_singh.jpg" alt="Bana Singh Image" class="circular-img" />
 
