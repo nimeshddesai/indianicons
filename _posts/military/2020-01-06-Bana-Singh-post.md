@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Hon Captain Bana Singh"
-date: 2024-01-06
+date: 2020-01-06
+timeline: (6 January 1949)
 categories: military
 ---
-##### (6 January 1949)
 
 <img src="/images/bana_singh.jpg" alt="Bana Singh Image" class="circular-img" />
 
@@ -14,4 +14,13 @@ Bana Singh was born on 6 January 1949 in a tiny village of Kadyal near Jammu. At
  
  Naib Subedar Bana Singh was awarded the Param Veer Chakra for conspicuous bravery and leadership under the most adverse conditions. The unit also received one Maha Vir Chakra, seven Vir Chakras and one Sena Medal for the Operation Rajiv. Bana Singh was subsequently promoted to the honorary rank of Captain. Hon Captain Bana Singh retired from service on 31 October 2000.
 
-__Trivia__ - *To honour the bravery of Bana Singh, the post he captured is now called Bana Post (Bana Top)*.
+__Trivia__ : *To honour the bravery of Bana Singh, the post he captured is now called Bana Post (Bana Top)*.
+
+---
+
+#### References:
+- Book : *The Brave* by Rachna Bisht Rawat
+- [Honorary Captain Bana Singh - Defence Direct Education](https://www.defencedirecteducation.com/honorary-captain-bana-singh/)
+- [Bana Singh: Indian Army Param Vir Chakra Hero - The Better India](https://www.thebetterindia.com/123693/bana-singh-indian-army-param-vir-chakra-hero-1987-siachen/)
+
+---

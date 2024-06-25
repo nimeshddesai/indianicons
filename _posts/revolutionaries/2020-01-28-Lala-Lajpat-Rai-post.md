@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "Lala Lajpat Rai"
-date: 2024-01-28
-categories: revolutionaries
+date: 2020-01-28
+timeline: (28 January 1865 – 17 November 1928)
+categories:
+    - freedom-fighters
+    - revolutionaries
 ---
-##### (28 January 1865 – 17 November 1928)
 
 <img src="/images/Lala-Lajpat-Rai.jpg" alt="Lala Lajpat Rai Image" class="circular-img" />
 
@@ -20,3 +22,13 @@ In 1928, the Simon Commission, which had no Indian members, visited India to dis
 Lala Lajpat Rai's fervent nationalism left a lasting impact on the youth of India, igniting a spirit of patriotism across the nation.
 
 __Trivia__ - *Lala Lajpat Rai founded the Indian Home Rule League of America in New York in 1917.*
+
+---
+
+#### References:
+
+- [Lala Lajpat Rai - YourDictionary Biography](https://biography.yourdictionary.com/lala-lajpat-rai)
+- [Lala Lajpat Rai - Jagran Josh](https://www.jagranjosh.com/general-knowledge/lala-lajpat-rai-biography-1580207229-1)
+- [Lala Lajpat Rai - Cultural India](https://www.culturalindia.net/leaders/lala-lajpat-rai.html)
+
+---

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Radhabinod Pal"
-date: 2024-01-27
+title: "Radha Binod Pal"
+date: 2020-01-27
+timeline: (27 January 1886 - 10 January 1967)
 categories: luminaries
 ---
-##### (27 January 1886 - 10 January 1967)
 
 <img src="/images/Radhabinod-Pal.jpeg" alt="Radhabinod Pal Image" class="circular-img" />
 
@@ -15,3 +15,11 @@ Pal made significant contributions to the Indian Income Tax Act of 1922 and was 
 After the trial, Pal was elected to the United Nations’ International Law Commission, where he served from 1958 to 1966. In 1959, he was awarded the Padma Vibhushan, and the Emperor of Japan conferred one of their highest civilian honors upon him.
 
 __Trivia__ - *There is a statue of Radha Binod Pal in front of the Supreme Court of Tokyo.*
+
+---
+
+#### References:
+- [Radha Binod Pal: The Story of a Jurist India Disowned - The Leaflet](https://www.theleaflet.in/we-are-no-way-responsible-for-this-the-story-of-radhabinod-pal-the-jurist-india-disowned/#)
+- [Radha Binod Pal: The Forgotten Indian and the Japanese Hero - Live Mint](https://www.livemint.com/Leisure/r04V6S8iXWuQTweyxxoMMP/Radhabinod-Pal-The-forgotten-Indian-and-the-Japanese-hero.html)
+
+---

@@ -4,22 +4,15 @@ title: About
 permalink: /about/
 ---
 
-India is a land of stories. There are stories in every state and every region of this country. We all know a lot of movie heroes, cricketers, even politicians. Anyone can easily name 10 of them.
+India is a land of countless stories, with every state and region contributing to a rich tapestry of history and culture. While we all know the famous movie stars, cricketers, and politicians, how many of us can name ten scientists, revolutionaries, or military heroes? These lesser-known individuals have shaped the nation through their dedication, bravery, and innovation. Their lives are brimming with inspiration but are often lost in the annals of history.
 
-But what if we ask you to name 10 scientists or revolutionaries or heroes from our armed forces?
+Imagine reigniting interest in these extraordinary figures through engaging stories. By introducing them anew, we can spark genuine curiosity and admiration, encouraging readers to delve deeper into their remarkable journeys. This blog aims to shine a light on these unsung heroes across various fields—revolutionaries, freedom fighters, statesmen, scientists, armed forces, social workers, and artists. Each story is a gateway to a treasure trove of inspiration and knowledge, waiting to be explored further through books and other resources.
 
-There are many people who helped shape India over many centuries. There are names whose life can provide so much inspiration but are hardly known or forgotten in the layers of history.
+By celebrating the diverse heroes who have shaped India's past and present, this platform aspires to build a comprehensive collection of stories that highlight the multifaceted contributions to India's heritage. Over time, we hope to create a repository of inspiration, encouraging readers to explore these remarkable lives in greater detail and appreciate the rich history that defines our nation.
 
-*What if these names are introduced again as small stories, will they create genuine interest?*
-
-The purpose of this blog is to provide an interesting and encouraging introduction about few such Indian heroes. Once readers get to know about the hero, they can explore them in greater details through various books and other resources.
-
-These heroes are from different fields, including but not limited to, revolutionaries, freedom fighters, statesmen, scientists, armed forces, social workers and arts. Over the time, Indian heroes from different fields will be introduced here.
-
-Over the next 100 days, we'll be adding one or more stories daily. Do check those out and share with your friends.
+Do check out these stories and share with your friends.
 
 Meanwhile, do try this [Indian Heroes Quiz][indianheroesquiz] to check your knowledge.
-
 
 ---
 

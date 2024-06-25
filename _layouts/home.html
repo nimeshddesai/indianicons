@@ -10,24 +10,58 @@ layout: default
 
   {{ content }}
 
-  {% assign about = site.pages | where: 'name','about.md' %}
-  {{about}}
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
-  <h2 class="post-list-heading">{{ page_paths.list_title | default: "Categories" }}</h2>
-  <br>
-  <ul class="post-list">
-    {%- for path in page_paths -%}
-      <li>
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-        {%- if my_page.title and my_page.title != "About" and my_page.title != "Settings" -%}
-          <h3>
-            <a class="post-link" href="{{ my_page.url | relative_url }}">
-              {{ my_page.title | escape }}
-            </a>
-          </h3>
-        {%- endif -%}
-      </li>
-    {%- endfor -%}
-  </ul>
+  <!-- Introduction -->
+  <section id="introduction">
+    <p>Our blog introduces Indian heroes from various fields, including revolutionaries, freedom fighters, statesmen, scientists, armed forces, social workers, and artists. These remarkable individuals have made significant contributions but are often forgotten. By sharing their stories, we aim to inspire and educate, bringing these lesser-known heroes into the spotlight.
+      This blog contains stories of {{ site.posts | size }} heroes.</p>
+    {%- assign about = site.pages | where: "path", 'about.md' | first -%}
+    <p>To know more about vision, click on 
+      <a href="{{ about.url | relative_url }}">
+        {{ about.title | escape }}
+      </a>
+    </p>
+    <p>
+      {%- assign indianheroesquiz = 'https://indianheroesquiz.netlify.app/' -%}
+      Checkout <a href="{{ indianheroesquiz | relative_url }}">Indian Heroes Quiz</a> to test your knowledge.
+    </p>
+  </section>
+  <hr>
+  <!-- Story of the day -->
+  <section id="story-of-the-day">
+    <h2>Story of the day</h2>
+    {% assign random_post = site.posts | sample %}
+    <article>
+      <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
+      {% capture random_post_content %}
+      {{ random_post.content | markdownify }}
+      {% endcapture %}
+      {% assign paragraphs = random_post_content | split: "<p>" %}
+      {% for paragraph in paragraphs %}
+      {% if forloop.index0 > 0 and forloop.index0 < 3 %}
+        <p>{{ paragraph }}</p>
+      {% endif %}
+      {% endfor %}
+      <p><a href="{{ random_post.url }}">(read the full story)</a></p>
+    </article>
+  </section>
+  <hr>
+  <!-- Categories -->
+  <section id="categories">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <h2 class="post-list-heading">{{ page_paths.list_title | default: "Categories" }}</h2>
+    <br>
+    <ul class="post-list">
+      {%- for path in page_paths -%}
+        <li>
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title and my_page.title != "About" and my_page.title != "Settings" -%}
+              <a class="post-link" href="{{ my_page.url | relative_url }}">
+                {{ my_page.title | escape }}
+              </a>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
 </div>
