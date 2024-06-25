@@ -8,8 +8,7 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        {{ page.timeline }}
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
@@ -19,6 +18,18 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  <h2>Next Story</h2>
+  {%- assign random_post = site.posts | sample -%}
+  {% for counter in (0..9) %}
+    {%- if random_post.url == page.url -%}
+      {%- assign random_post = site.posts | sample -%}
+    {%- else -%}
+      {%- break -%}
+    {%- endif -%}
+  {% endfor %}
+  <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
+
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

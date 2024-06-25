@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Yellapragada Subbarow"
-date: 2024-01-12
+date: 2020-01-12
+timeline: (12 January 1895 – 8 August 1948)
 categories: scientists
 ---
-##### (12 January 1895 – 8 August 1948)
 
 <img src="/images/subbarow.jpeg" alt="Yellapragada Subbarow Image" class="circular-img" />
 
@@ -16,4 +16,14 @@ Subbarow's achievements earned him a PhD and a Rockefeller Foundation Fellowship
 
 Despite spending most of his life in America, Subbarow remained an Indian citizen. His groundbreaking discoveries, though not widely recognized, have saved millions of lives worldwide. 
 
-__Trivia__ - *Interestingly, in his youth, Dr. Subbarow was associated with the Ramakrishna Mission and had aspirations of becoming a sanyasi (monk).*
+__Trivia__ : *Interestingly, in his youth, Dr. Subbarow was associated with the Ramakrishna Mission and had aspirations of becoming a sanyasi (monk).*
+
+---
+
+#### References:
+- Book : *Bright Sparks - Indian Scientists* by Arvind Gupta
+- [Article on Y. Subbarow - IAS](https://www.ias.ac.in/article/fulltext/reso/017/06/0538-0557)
+- [Y. Subbarow - Official Website](https://www.ysubbarow.info/)
+- [Yellapragada Subbarow - IJDVL](https://ijdvl.com/yellapragada-subbarow-the-unsung-indian-biochemist-behind-methotrexate-and-other-drugs/)
+
+---

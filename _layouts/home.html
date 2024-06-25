@@ -13,7 +13,7 @@ layout: default
   <!-- Introduction -->
   <section id="introduction">
     <p>Our blog introduces Indian heroes from various fields, including revolutionaries, freedom fighters, statesmen, scientists, armed forces, social workers, and artists. These remarkable individuals have made significant contributions but are often forgotten. By sharing their stories, we aim to inspire and educate, bringing these lesser-known heroes into the spotlight.
-      There are total {{ site.posts | size }} stories on this blog.</p>
+      This blog contains stories of {{ site.posts | size }} heroes.</p>
     {%- assign about = site.pages | where: "path", 'about.md' | first -%}
     <p>To know more about vision, click on 
       <a href="{{ about.url | relative_url }}">
