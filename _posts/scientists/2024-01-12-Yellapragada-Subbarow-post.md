@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Yellapragada Subbarow"
-date: 2024-06-18
+date: 2024-01-12
 categories: scientists
 ---
 ##### (12 January 1895 – 8 August 1948)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mahadev Govind Ranade"
-date: 2024-06-18
+date: 2024-01-18
 categories: social-reformers
 ---
 ##### (18 January 1842 – 16 January 1901)
