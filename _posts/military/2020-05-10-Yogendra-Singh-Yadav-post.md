@@ -2,9 +2,11 @@
 layout: post
 title: "Hon Captain Yogendra Singh Yadav"
 date: 2020-05-10
-categories: military
+timeline: (10 May 1980)
+categories:
+    - military
+    - kargil-heroes
 ---
-##### (10 May 1980)
 
 <img src="/images/yogendra_yadav.jpg" alt="Yogendra Singh Yadav Image" class="circular-img" />
 

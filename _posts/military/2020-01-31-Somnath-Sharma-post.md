@@ -2,9 +2,9 @@
 layout: post
 title: "Major Somnath Sharma"
 date: 2020-01-31
+timeline: (31 January 1923 - 3 November 1947)
 categories: military
 ---
-##### (31 January 1923 – 3 November 1947)
 
 <img src="/images/Somnath-Sharma.jpeg" alt="Major Somnath Sharma Image" class="circular-img" />
 
