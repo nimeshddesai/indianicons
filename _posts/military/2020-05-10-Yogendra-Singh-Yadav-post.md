@@ -23,7 +23,7 @@ __Trivia__ : *Yogendra Singh Yadav received the Param Vir Chakra at the age of 1
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Kargil Vijay Diwas 2019: All You Need to Know About Param Vir Chakra Awardee Yogendra Singh Yadav - News18](https://www.news18.com/news/india/kargil-vijay-diwas-2019-heres-all-you-need-to-know-about-param-vir-chakra-awardee-yogendra-singh-yadav-2246795.html)
 - [Press Release on Param Vir Chakra Awardee Yogendra Singh Yadav - PIB](https://pib.gov.in/Pressreleaseshare.aspx?PRID=1746076)
 

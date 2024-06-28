@@ -21,7 +21,7 @@ __Trivia__ : *Before joining the Indian Army, Sanjay Kumar worked as a taxi driv
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [15th Anniversary of Kargil War Becomes Extra Special for Brave Heart Sanjay - Times of India](https://timesofindia.indiatimes.com/city/chandigarh/15th-anniversary-of-Kargil-War-becomes-extra-special-for-brave-heart-Sanjay/articleshow/38983145.cms)
 - [Sanjay Kumar: Param Vir of Himachal - The Tribune](https://www.tribuneindia.com/news/archive/himachaltribune/sanjay-kumar-param-vir-of-himachal-694942)
 

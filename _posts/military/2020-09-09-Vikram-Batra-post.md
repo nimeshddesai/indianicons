@@ -24,7 +24,7 @@ __Trivia__ : *Captain Vikram Batra's signal after capturing Point 5140, "Yeh Dil
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Captain Vikram Batra, PVC - Honourpoint](https://www.honourpoint.in/profile/capt-vikram-batra-pvc/)
 - [Captain Vikram Batra - National War Memorial](https://nationalwarmemorial.gov.in/param-yoddhas/details/24)
 

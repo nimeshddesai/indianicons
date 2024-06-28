@@ -23,7 +23,7 @@ __Trivia__ : *Captain Manoj Kumar Pandey did win the country's highest gallantry
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Captain Manoj Kumar Pandey, PVC - Honourpoint](https://www.honourpoint.in/profile/captain-manoj-kumar-pandey-pvc/)
 - [Want to Win Param Vir Chakra? Captain Manoj Kumar Pandey - Aviation Defence Universe](https://www.aviation-defence-universe.com/want-win-param-vir-chakra-captain-manoj-kumar-pandey/)
 

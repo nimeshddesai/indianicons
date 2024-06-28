@@ -22,7 +22,7 @@ __Trivia__ : *At 25 years old, Major Somnath Sharma became the first recipient o
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Major Somnath Sharma, PVC - Honourpoint](https://www.honourpoint.in/profile/major-somnath-sharma-pvc/)
 - [A Hero for Generations of Soldiers - Aviation Defence Universe](https://www.aviation-defence-universe.com/a-hero-for-generations-of-soldiers/)
 

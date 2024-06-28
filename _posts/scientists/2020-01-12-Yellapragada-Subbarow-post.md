@@ -21,7 +21,7 @@ __Trivia__ : *Interestingly, in his youth, Dr. Subbarow was associated with the 
 ---
 
 #### References:
-- Book : *Bright Sparks - Indian Scientists* by Arvind Gupta
+- [*Bright Sparks - Indian Scientists* by Arvind Gupta](https://www.insaindia.res.in/pdf/BS.pdf)
 - [Article on Y. Subbarow - IAS](https://www.ias.ac.in/article/fulltext/reso/017/06/0538-0557)
 - [Y. Subbarow - Official Website](https://www.ysubbarow.info/)
 - [Yellapragada Subbarow - IJDVL](https://ijdvl.com/yellapragada-subbarow-the-unsung-indian-biochemist-behind-methotrexate-and-other-drugs/)
