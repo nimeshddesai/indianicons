@@ -19,7 +19,7 @@ __Trivia__ : *To honour the bravery of Bana Singh, the post he captured is now c
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Honorary Captain Bana Singh - Defence Direct Education](https://www.defencedirecteducation.com/honorary-captain-bana-singh/)
 - [Bana Singh: Indian Army Param Vir Chakra Hero - The Better India](https://www.thebetterindia.com/123693/bana-singh-indian-army-param-vir-chakra-hero-1987-siachen/)
 

@@ -23,7 +23,7 @@ __Trivia__ : *While several scientists have received the Nobel Prize for researc
 ---
 
 #### References:
-- Book : *Bright Sparks - Indian Scientists* by Arvind Gupta
+- [*Bright Sparks - Indian Scientists* by Arvind Gupta](https://www.insaindia.res.in/pdf/BS.pdf)
 - [Satyendra Nath Bose - Biography](https://www.biography.com/scientist/satyendra-nath-bose)
 - [Satyendra Nath Bose - Vigyan Prasar](https://vigyanprasar.gov.in/bose-satyendra-nath/)
 - [Satyendra Nath Bose - WBCHSE](https://wbchse.nic.in/html/satyendra.html)

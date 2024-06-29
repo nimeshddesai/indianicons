@@ -2,9 +2,12 @@
 layout: post
 title: "Captain Vikram Batra"
 date: 2020-09-09
-categories: military
+timeline: (9 September 1974 - 7 July 1999)
+categories:
+    - military
+    - kargil-heroes
+
 ---
-##### (9 September 1974 - 7 July 1999)
 
 <img src="/images/Vikram_Batra.jpg" alt="Captain Vikram Batra Image" class="circular-img" />
 
@@ -21,7 +24,7 @@ __Trivia__ : *Captain Vikram Batra's signal after capturing Point 5140, "Yeh Dil
 ---
 
 #### References:
-- Book : *The Brave* by Rachna Bisht Rawat
+- [*The Brave* by Rachna Bisht Rawat](https://www.amazon.in/Brave-Param-Vir-Chakra-Stories/dp/0143422359)
 - [Captain Vikram Batra, PVC - Honourpoint](https://www.honourpoint.in/profile/capt-vikram-batra-pvc/)
 - [Captain Vikram Batra - National War Memorial](https://nationalwarmemorial.gov.in/param-yoddhas/details/24)
 
