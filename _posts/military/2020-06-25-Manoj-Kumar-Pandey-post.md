@@ -16,9 +16,7 @@ His moment of valor came during the Kargil War in July 1999. On the night of Jul
 
 Despite being hit on the shoulder and legs while clearing the third bunker, Captain Pandey continued his assault. He destroyed the fourth bunker with a grenade, even though he was gravely injured. A bullet hit him in the forehead, and he collapsed. His bravery and sacrifice enabled the Indian Army to eventually capture Khalubar.
 
-For his extraordinary courage and leadership, Captain Manoj Kumar Pandey was posthumously awarded the Param Vir Chakra, India's highest military honor.
-
-__Trivia__ : *Captain Manoj Kumar Pandey did win the country's highest gallantry award, Param Vir Chakra, but unfortunately did not live to receive it in person.*
+__Trivia__ : *For his extraordinary courage and leadership, Captain Manoj Kumar Pandey was awarded the country's highest gallantry award, Param Vir Chakra, but unfortunately did not live to receive it in person.*
 
 ---
 
