@@ -15,14 +15,18 @@ layout: default
     <p>This platform aims to shine a light on unsung Indian heroes across various fields. These remarkable individuals have made significant contributions but are often forgotten. By sharing their stories, we aim to inspire and educate, bringing these lesser-known heroes into the spotlight.
     </p>
     {%- assign about = site.pages | where: "path", 'about.md' | first -%}
-    <p>This blog contains stories of {{ site.posts | size }} heroes. To know more about vision, click on 
+    <p>This blog contains stories of {{ site.posts | size }} heroes. To know more about our vision, click on 
       <a href="{{ about.url | relative_url }}">
         {{ about.title | escape }}
       </a>
     </p>
     <p>
+      {%- assign indianheroessurvey = 'https://forms.gle/Qnr4sGJs2rYNoH7G7' -%}
+      Do take out 5 minutes and participate in this <a href="{{ indianheroessurvey | relative_url }}" target="_blank" rel="noopener noreferrer">survey</a>.
+    </p>
+    <p>
       {%- assign indianheroesquiz = 'https://indianheroesquiz.netlify.app/' -%}
-      Checkout <a href="{{ indianheroesquiz | relative_url }}">Indian Heroes Quiz</a> to test your knowledge.
+      Checkout <a href="{{ indianheroesquiz | relative_url }}" target="_blank" rel="noopener noreferrer">Indian Heroes Quiz</a> to test your knowledge.
     </p>
   </section>
   <hr>
