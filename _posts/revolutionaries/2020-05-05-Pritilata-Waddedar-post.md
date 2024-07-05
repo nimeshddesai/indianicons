@@ -15,7 +15,7 @@ Due to her revolutionary activities, the British authorities denied her graduati
 
 On September 23, 1932, Pritilata led an attack on the Pahartali European Club, a symbol of colonialism and racism. During the raid, she was wounded and chose to swallow cyanide to avoid arrest. Pritilata was only 21 years old at the time of the 'Pahartali European Club' attack.
 
-__Trivia__ - *Pritilata is fondly remembered as 'Birkanya' or the iron lady of Bengal.*
+__Trivia__ : *Pritilata is fondly remembered as 'Birkanya' or the iron lady of Bengal.*
 
 ---
 

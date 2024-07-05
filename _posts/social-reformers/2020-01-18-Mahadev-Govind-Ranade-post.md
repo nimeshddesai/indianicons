@@ -16,7 +16,7 @@ A founding member of the Indian National Congress, Ranade believed in achieving 
 
 Often regarded as the ‘father of Indian economics,’ Justice Ranade founded the Industrial Association of Western India and believed that India's progress lay in industrial and commercial development. He authored numerous books on the Indian economy and was a noted historian, with his work "Rise of Maratha Power" being particularly well-known.
 
-__Trivia__ - *Mahadev Govind Ranade was responsible for the introduction of vernacular languages in the university curriculum.*
+__Trivia__ : *Mahadev Govind Ranade was responsible for the introduction of vernacular languages in the university curriculum.*
 
 ---
 

@@ -15,7 +15,7 @@ A master planner and organizer, Surya Sen, with the help of Ganesh Ghosh, Lokena
 
 The British retaliated, and after exhausting their ammunition, the revolutionaries had to flee. Sen went into hiding and was supported by locals, but he was eventually betrayed and arrested on February 16, 1933. He was brutally tortured by the police in jail, with his limbs broken. Surya Sen was finally hanged on January 12, 1934, in Chittagong Central Jail, and his body was dumped in the ocean.
 
-__Trivia__ - *There is a metro station in the Kolkata metro named after Masterda Surya Sen.*
+__Trivia__ : *There is a metro station in the Kolkata metro named after Masterda Surya Sen.*
 
 ---
 

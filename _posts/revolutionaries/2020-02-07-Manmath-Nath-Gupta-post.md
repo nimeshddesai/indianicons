@@ -15,7 +15,7 @@ Seeking a more active role, Gupta joined the Hindustan Republican Association (H
 
 Gupta was released in 1937 but was soon re-arrested for his writings against the British government and sent to the Cellular Jail in the Andamans. He was finally released in 1946. A prolific writer, he authored over 120 books in Bengali, Hindi, and English. After Independence, Gupta worked with the Ministry of Information and Broadcasting and edited the Planning Commission’s magazine, Yojana. He also edited Bal Bharti, a children’s magazine, and Aajkal, a Hindi literary magazine.
 
-__Trivia__ - *In his book "They Lived Dangerously," Manmath Nath Gupta narrated the freedom struggle from the perspective of the revolutionaries.*
+__Trivia__ : *In his book "They Lived Dangerously," Manmath Nath Gupta narrated the freedom struggle from the perspective of the revolutionaries.*
 
 ---
 

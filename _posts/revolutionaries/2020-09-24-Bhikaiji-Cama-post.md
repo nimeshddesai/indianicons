@@ -15,7 +15,7 @@ On August 21, 1907, Madam Cama attended the International Socialist Conference i
 
 Madam Cama traveled to the USA and Egypt to raise awareness about India's revolutionary struggle. Her home in Paris became a haven for revolutionaries from around the world. She wrote, published, and distributed revolutionary literature, including "Bande Mataram," in response to the British ban on the song, and "Madan’s Talwar," in memory of Madan Lal Dhingra. Until her last days, she continued to support and finance revolutionaries both in and out of India.
 
-__Trivia__ - *The flag that Madam Cama unfurled at Stuttgart is now on public display at the Maratha and Kesari Library in Pune.*
+__Trivia__ : *The flag that Madam Cama unfurled at Stuttgart is now on public display at the Maratha and Kesari Library in Pune.*
 
 ---
 

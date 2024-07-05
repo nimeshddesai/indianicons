@@ -14,7 +14,7 @@ Khan became a prominent Pashtun leader who worked towards the social upliftment 
 
 Khan was a member of the Constituent Assembly representing NWFP and strongly opposed the partition of India on religious grounds. He felt a great sense of betrayal by both Pakistan and India. In response, Bacha Khan formed Pakistan’s first national opposition party on May 8, 1948 – The Pakistan Azad Party. Due to his continued activism, he was repeatedly arrested and later crossed the border to live in Afghanistan until his last days. In 1987, he became the first non-Indian to be awarded India’s highest civilian honor, the Bharat Ratna.
 
-__Trivia__ - *For his close association with Mahatma Gandhi and belief in non-violence, Khan Abdul Ghaffar Khan earned the nickname "Frontier Gandhi."*
+__Trivia__ : *For his close association with Mahatma Gandhi and belief in non-violence, Khan Abdul Ghaffar Khan earned the nickname "Frontier Gandhi."*
 
 ---
 

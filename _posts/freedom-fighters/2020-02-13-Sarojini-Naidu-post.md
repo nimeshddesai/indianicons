@@ -14,7 +14,7 @@ Passionate about women's education, she made numerous speeches on its importance
 
 In 1925, she became the first woman president of the Indian National Congress. Sarojini actively participated in the non-cooperation movement launched by Mahatma Gandhi and led women satyagrahis during the Salt March in 1930. During the Quit India movement, she was jailed at the Aga Khan Palace alongside Gandhiji. After independence, Sarojini Naidu became the first woman governor of India, serving as the governor of the United Provinces of Agra and Awadh from 1947 to 1949.
 
-__Trivia__ - *Sarojini Naidu is known as the Nightingale of India.*
+__Trivia__ : *Sarojini Naidu is known as the Nightingale of India.*
 
 
 ---

@@ -14,7 +14,7 @@ On August 8, 1942, the Indian National Congress launched the Quit India Movement
 
 Aruna went underground after this event and continued to support the movement through radio broadcasts, magazines, and pamphlets. After India gained independence, she remained active in politics for some time. In recognition of her exceptional revolutionary spirit and her efforts to improve the lives of women and the poor, she was posthumously awarded the Bharat Ratna in 1997.
 
-__Trivia__ - *Aruna Asaf Ali became the first elected Mayor of Delhi in 1958.*
+__Trivia__ : *Aruna Asaf Ali became the first elected Mayor of Delhi in 1958.*
 
 ---
 
