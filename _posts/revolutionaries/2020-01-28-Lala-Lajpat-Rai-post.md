@@ -21,7 +21,7 @@ In 1928, the Simon Commission, which had no Indian members, visited India to dis
 
 Lala Lajpat Rai's fervent nationalism left a lasting impact on the youth of India, igniting a spirit of patriotism across the nation.
 
-__Trivia__ - *Lala Lajpat Rai founded the Indian Home Rule League of America in New York in 1917.*
+__Trivia__ : *Lala Lajpat Rai founded the Indian Home Rule League of America in New York in 1917.*
 
 ---
 

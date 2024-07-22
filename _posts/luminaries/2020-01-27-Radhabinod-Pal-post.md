@@ -14,7 +14,7 @@ Pal made significant contributions to the Indian Income Tax Act of 1922 and was 
 
 After the trial, Pal was elected to the United Nations’ International Law Commission, where he served from 1958 to 1966. In 1959, he was awarded the Padma Vibhushan, and the Emperor of Japan conferred one of their highest civilian honors upon him.
 
-__Trivia__ - *There is a statue of Radha Binod Pal in front of the Supreme Court of Tokyo.*
+__Trivia__ : *There is a statue of Radha Binod Pal in front of the Supreme Court of Tokyo.*
 
 ---
 
