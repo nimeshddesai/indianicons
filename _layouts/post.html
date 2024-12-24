@@ -2,6 +2,16 @@
 layout: default
 ---
 {% include blog_head.html %}
+<script>
+  function copyToClipboard(url) {
+    navigator.clipboard.writeText(url).then(function() {
+      alert('Link copied to clipboard!');
+    }, function(err) {
+      alert('Failed to copy link: ', err);
+    });
+  }
+</script>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -19,6 +29,20 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="share-buttons">
+    <b>Liked the story? Share :</b> 
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="/images/facebook_Logo.png" alt="Facebook" width="20">
+    </a>
+    <a href="https://x.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
+      <img src="/images/x_logo.avif" alt="X (Twitter)" width="20">
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
+      <img src="/images/LinkedIn_logo.png" alt="LinkedIn" width="20">
+    </a>
+    <button class="copy-link-button" onclick="copyToClipboard('{{ site.url }}{{ page.url }}')">Copy Link</button>
+  </div>
+  
   <h2>Next Story</h2>
   {%- assign random_post = site.posts | sample -%}
   {% for counter in (0..9) %}

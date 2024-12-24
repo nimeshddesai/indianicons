@@ -8,3 +8,38 @@
     margin-bottom: 20px;
     background-color: #fff;
 }
+
+.share-buttons {
+	margin-top: 20px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+  }
+  
+  .share-buttons h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+  }
+  
+  .share-buttons a {
+	margin-right: 10px;
+	text-decoration: none;
+  }
+  
+  .share-buttons img {
+	vertical-align: middle;
+	border-radius: 5px;
+  }
+  
+  .copy-link-button {
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .copy-link-button:hover {
+	background-color: #0056b3;
+  }
+  
