@@ -16,7 +16,7 @@ Dr. Sethi was deeply committed to helping polio patients and amputees. At the ti
 
 The Jaipur Foot gained international recognition and has been widely used for war amputees around the world. Dr. Sethi also established a Rehabilitation Unit to provide free artificial limbs to those in need. For his remarkable contributions, he received many awards, including the Padma Shri in 1981.
 
-__Trivia__ : *Trivia: Dr. Sethi was recognized by the Guinness Book of World Records for helping a record number of amputees regain mobility.*
+__Trivia__ : *Dr. Sethi was recognized by the Guinness Book of World Records for helping a record number of amputees regain mobility.*
 
 ---
 

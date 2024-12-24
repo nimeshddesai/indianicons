@@ -19,7 +19,7 @@ For nearly 80 years, Salim Ali meticulously observed and documented the birds of
 
 Ali was also a strong advocate for nature conservation and contributed to efforts to protect India’s wildlife. His fascination with motorcycles and adventurous spirit further set him apart. Many bird species, sanctuaries, and institutions are named in his honor, including the Salim Ali Bird Sanctuary in Goa. He was awarded the Padma Vibhushan in 1976 for his contributions.
 
-__Trivia__ : *Trivia: Salim Ali is fondly known as the “Birdman of India.”*
+__Trivia__ : *Salim Ali is fondly known as the “Birdman of India.”*
 
 
 ---
