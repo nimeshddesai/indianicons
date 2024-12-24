@@ -17,7 +17,7 @@ At the time, the British government had implemented the Madras Forest Act of 188
 
 The rebellion was short-lived as the British retaliated with force, killing many tribal warriors. Birsa escaped but was later betrayed, arrested, and sent to prison. It is believed he was poisoned in jail and died at just 25 years old. Despite his early death, Birsa’s legacy lived on, forcing the British to enact the Chota Nagpur Tenancy Act in 1908, which protected tribal lands.
 
-__Trivia__ : *Trivia: The tribals revered Birsa Munda as a God and lovingly called him Dharti Abba, meaning “Father of the Earth.”*
+__Trivia__ : *The tribals revered Birsa Munda as a God and lovingly called him Dharti Abba, meaning “Father of the Earth.”*
 
 
 ---
