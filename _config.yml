@@ -29,6 +29,7 @@ instagram_username: indianheroescalendar
 facebook_username: IndianHeroesCalendar
 
 header_pages:
+  - all.md
   - military.md
   - kargil-heroes.md
   - freedom-fighters.md
