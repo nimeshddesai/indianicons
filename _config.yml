@@ -23,7 +23,7 @@ email: indianheroescalendar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://indianicons.in" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: IndianHeroesCal
 instagram_username: indianheroescalendar
 facebook_username: IndianHeroesCalendar

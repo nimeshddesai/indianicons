@@ -31,16 +31,16 @@ layout: default
 
   <div class="share-buttons">
     <b>Liked the story? Share :</b> 
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer">
       <img src="/images/facebook_Logo.png" alt="Facebook" width="20">
     </a>
-    <a href="https://x.com/intent/tweet?url={{ site.url }}{{ page.url }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
+    <a href="https://x.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
       <img src="/images/x_logo.avif" alt="X (Twitter)" width="20">
     </a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | uri_escape }}" target="_blank" rel="noopener noreferrer">
       <img src="/images/LinkedIn_logo.png" alt="LinkedIn" width="20">
     </a>
-    <button class="copy-link-button" onclick="copyToClipboard('{{ site.url }}{{ page.url }}')">Copy Link</button>
+    <button class="copy-link-button" onclick="copyToClipboard('{{ page.url | absolute_url }}')">Copy Link</button>
   </div>
   
   <h2>Next Story</h2>
