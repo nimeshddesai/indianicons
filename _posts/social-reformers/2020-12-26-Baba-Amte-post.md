@@ -3,7 +3,9 @@ layout: post
 title: "Murlidhar Devidas Amte"
 date: 2020-12-26
 timeline: (26 December 1914 – 9 February 2008)
-categories: luminaries
+categories:
+    - social-reformers
+
 ---
 
 <img src="/images/BabaAmte.jpeg" alt="Baba Amte Image" class="circular-img" />
