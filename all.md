@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "All Heroes"
+title: "All Icons"
 permalink: /all/
 ---
 {% assign sorted_posts = site.posts | sort: 'date' %}
