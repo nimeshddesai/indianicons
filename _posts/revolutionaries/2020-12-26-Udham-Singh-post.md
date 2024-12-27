@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Udham Singh"
-date: 2020-12-15
+date: 2020-12-26
 timeline: (26 December 1899 – 31 July 1940)
 categories:
     - revolutionaries
