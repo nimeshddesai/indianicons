@@ -33,8 +33,30 @@ layout: default
   <!-- Story of the day -->
   <section id="story-of-the-day">
     <h2>Story of the day</h2>
-    {% assign random_post = site.posts | sample %}
-    <article>
+    <!-- Fetch the current day and month -->
+      {% assign current_day = 'now' | date: "%d" %}
+      {% assign current_month = 'now' | date: "%m" %}
+      <!-- Initialize an empty array to store matching posts -->
+      {% assign matching_posts = "" | split: "," %}
+
+      <!-- Loop through all posts -->
+      {% for post in site.posts %}
+        {% assign post_day = post.date | date: "%d" %}
+        {% assign post_month = post.date | date: "%m" %}
+        
+        <!-- Check if the post's day and month match the current day and month -->
+        {% if post_day == current_day and post_month == current_month %}
+          {% assign matching_posts = matching_posts | push: post %}
+        {% endif %}
+      {% endfor %}
+      <!-- Check if there are matching posts -->
+      <!-- Select a random post -->
+      {% if matching_posts.size > 0 %}
+        {% assign random_post = matching_posts | sample %}
+      {% else %}
+        {% assign random_post = site.posts | sample %}
+      {% endif %}
+      <article>
       <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
       {% capture random_post_content %}
       {{ random_post.content | markdownify }}

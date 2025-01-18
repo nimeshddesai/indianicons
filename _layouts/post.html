@@ -44,16 +44,30 @@ layout: default
   </div>
   
   <h2>Next Story</h2>
-  {%- assign random_post = site.posts | sample -%}
-  {% for counter in (0..9) %}
-    {%- if random_post.url == page.url -%}
-      {%- assign random_post = site.posts | sample -%}
-    {%- else -%}
-      {%- break -%}
-    {%- endif -%}
-  {% endfor %}
-  <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
+  <!-- Fetch the current day and month -->
+  {% assign current_day = 'now' | date: "%d" %}
+  {% assign current_month = 'now' | date: "%m" %}
+  <!-- Initialize an empty array to store matching posts -->
+  {% assign matching_posts = "" | split: "," %}
 
+  <!-- Loop through all posts -->
+  {% for post in site.posts %}
+    {% assign post_day = post.date | date: "%d" %}
+    {% assign post_month = post.date | date: "%m" %}
+    
+    <!-- Check if the post's day and month match the current day and month -->
+    {% if post_day == current_day and post_month == current_month and post.url != page.url %}
+      {% assign matching_posts = matching_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+  <!-- Check if there are matching posts -->
+  {% if matching_posts.size > 0 %}
+    {% assign random_post = matching_posts | sample %}
+  {% else %}
+    <!-- Select a random post -->
+    {% assign random_post = site.posts | sample %}
+  {% endif %}  
+  <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
