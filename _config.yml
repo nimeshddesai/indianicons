@@ -30,6 +30,7 @@ facebook_username: IndianHeroesCalendar
 
 header_pages:
   - all.md
+  - search.md
   - military.md
   - kargil-heroes.md
   - freedom-fighters.md

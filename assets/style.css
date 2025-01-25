@@ -43,3 +43,28 @@
 	background-color: #0056b3;
   }
   
+  #search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #search-results {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #search-results li {
+    margin-bottom: 10px;
+  }
+  
+  #search-results a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #search-results a:hover {
+    text-decoration: underline;
+  }
+  
