@@ -35,8 +35,6 @@ layout: default
     <!-- Fetch the current day and month -->
       {% assign current_day = 'now' | date: "%d" %}
       {% assign current_month = 'now' | date: "%m" %}
-      "date": "{{ current_day }}"
-      "month": "{{ current_month }}"
       <!-- Initialize an empty array to store matching posts -->
       {% assign matching_posts = "" | split: "," %}
 
@@ -44,10 +42,6 @@ layout: default
       {% for post in site.posts %}
         {% assign post_day = post.date | date: "%d" %}
         {% assign post_month = post.date | date: "%m" %}
-        "post title": "{{ post.title }}"
-        "post date": "{{ post_day }}"
-        "post month": "{{ post_month }}"
-        <br>
         
         <!-- Check if the post's day and month match the current day and month -->
         {% if post_day == current_day and post_month == current_month %}
