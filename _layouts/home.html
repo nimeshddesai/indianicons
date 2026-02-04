@@ -31,7 +31,8 @@ layout: default
   <hr>
   <!-- Story of the day -->
   <section id="story-of-the-day">
-    <h2>Story of the day</h2>
+    
+    <h2>Story of the day <a href="#" id="refresh-story" style="font-size: 0.7em; font-weight: normal; text-decoration: none;">🔄 Refresh</a></h2>
     <!-- Fetch the current day and month -->
       {% assign current_day = 'now' | date: "%d" %}
       {% assign current_month = 'now' | date: "%m" %}
@@ -55,8 +56,9 @@ layout: default
       {% else %}
         {% assign random_post = site.posts | sample %}
       {% endif %}
-      <article>
-      <h3><a href="{{ random_post.url }}">{{ random_post.title }}</a></h3>
+      <article id="story-article">
+      <h3><a href="{{ random_post.url }}" id="story-title-link">{{ random_post.title }}</a></h3>
+      <div id="story-content">
       {% capture random_post_content %}
       {{ random_post.content | markdownify }}
       {% endcapture %}
@@ -66,8 +68,93 @@ layout: default
         <p>{{ paragraph }}</p>
       {% endif %}
       {% endfor %}
-      <p><a href="{{ random_post.url }}">(read the full story)</a></p>
+      </div>
+      <p><a href="{{ random_post.url }}" id="story-read-more">(read the full story)</a></p>
     </article>
+    
+    <!-- Embed posts data for JavaScript refresh functionality -->
+    <script>
+      (function() {
+        // Get current day and month
+        const now = new Date();
+        const currentDay = String(now.getDate()).padStart(2, '0');
+        const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
+        
+        // Posts data embedded from Jekyll
+        const allPosts = [
+          {% for post in site.posts %}
+          {
+            url: "{{ post.url | relative_url }}",
+            title: {{ post.title | jsonify }},
+            content: {{ post.content | markdownify | jsonify }},
+            date: "{{ post.date | date: '%Y-%m-%d' }}",
+            day: "{{ post.date | date: '%d' }}",
+            month: "{{ post.date | date: '%m' }}"
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ];
+        
+        // Filter posts matching current day and month
+        const matchingPosts = allPosts.filter(post => 
+          post.day === currentDay && post.month === currentMonth
+        );
+        
+        // Function to get random post based on the logic
+        function getRandomPost() {
+          const postsToUse = matchingPosts.length > 0 ? matchingPosts : allPosts;
+          return postsToUse[Math.floor(Math.random() * postsToUse.length)];
+        }
+        
+        // Function to extract image and paragraphs matching Jekyll logic
+        function extractContent(content) {
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = content;
+          
+          let result = '';
+          
+          // Extract image (first img tag)
+          const images = tempDiv.querySelectorAll('img');
+          if (images.length > 0) {
+            result += images[0].outerHTML;
+          }
+          
+          // Extract paragraphs matching Jekyll logic (2nd and 3rd paragraphs)
+          const paragraphs = tempDiv.querySelectorAll('p');
+          // Match Jekyll logic: forloop.index0 > 0 and < 3 means indices 1 and 2
+          for (let i = 1; i < Math.min(2, paragraphs.length); i++) {
+            result += paragraphs[i].outerHTML;
+          }
+          
+          return result;
+        }
+        
+        // Function to refresh the story
+        function refreshStory() {
+          const randomPost = getRandomPost();
+          const titleLink = document.getElementById('story-title-link');
+          const readMoreLink = document.getElementById('story-read-more');
+          const contentDiv = document.getElementById('story-content');
+          
+          if (titleLink && readMoreLink && contentDiv) {
+            titleLink.textContent = randomPost.title;
+            titleLink.href = randomPost.url;
+            readMoreLink.href = randomPost.url;
+            contentDiv.innerHTML = extractContent(randomPost.content);
+          }
+        }
+        
+        // Attach refresh handler
+        document.addEventListener('DOMContentLoaded', function() {
+          const refreshLink = document.getElementById('refresh-story');
+          if (refreshLink) {
+            refreshLink.addEventListener('click', function(e) {
+              e.preventDefault();
+              refreshStory();
+            });
+          }
+        });
+      })();
+    </script>
   </section>
   <hr>
   <!-- Categories -->
