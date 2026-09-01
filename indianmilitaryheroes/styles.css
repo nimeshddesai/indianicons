@@ -167,7 +167,7 @@ textarea {
       color-mix(in srgb, var(--paper) 92%, transparent) 45%,
       color-mix(in srgb, var(--paper) 55%, transparent) 100%
     ),
-    url("/images/heroes/Heroes.png");
+    url("/indianmilitaryheroes/images/heroes/Heroes.png");
   background-position: center right;
   background-size: cover;
 }
