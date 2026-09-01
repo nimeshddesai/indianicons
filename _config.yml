@@ -68,3 +68,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# Pass-through files/dirs for Netlify and sub-path apps
+include:
+  - _redirects
+  - indianmilitaryheroes
