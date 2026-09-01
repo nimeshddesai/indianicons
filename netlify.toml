@@ -1,0 +1,38 @@
+﻿[build]
+  command   = "bundle exec jekyll build"
+  publish   = "_site"
+
+# ── Cache headers ──────────────────────────────────────────────────────────────
+
+[[headers]]
+  for = "/indianmilitaryheroes/data/course.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/indianmilitaryheroes/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/indianmilitaryheroes/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/indianmilitaryheroes/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/indianmilitaryheroes/audio/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# ── SPA catch-all for the course sub-path ─────────────────────────────────────
+# Must come AFTER any more-specific redirect rules.
+[[redirects]]
+  from   = "/indianmilitaryheroes/*"
+  to     = "/indianmilitaryheroes/index.html"
+  status = 200
