@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Rajkumari Amrit Kaur"
-date: 2020-01-27
-timeline: (2 February 1887 – 6 February 1964)
+date: 2020-02-02
+timeline: (2 February 1889 – 6 February 1964)
 categories: luminaries
 ---
 
