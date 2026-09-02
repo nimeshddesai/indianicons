@@ -8,7 +8,7 @@ categories: scientists
 
 <img src="/images/Kamala_Sohonie.jpg" alt="Kamala Sohonie Image" class="circular-img" />
 
-Kamala Sahonie, born on September 14, 1912, in Indore as Kamala Bhagwat, was a trailblazing Indian scientist. She completed her BSc in Physics and Chemistry from Bombay University, where she topped her class. Despite her academic excellence, Kamala faced significant obstacles when she sought admission to the Indian Institute of Science (IISc) in Bangalore. Dr. C V Raman, who was against admitting female students, initially denied her application. After persistent efforts and struggles, Kamala was finally admitted to IISc, albeit with certain conditions. Her dedication and hard work eventually led to the institute opening its doors to female students.
+Kamala Sohonie, born on September 14, 1912, in Indore as Kamala Bhagwat, was a trailblazing Indian scientist. She completed her BSc in Physics and Chemistry from Bombay University, where she topped her class. Despite her academic excellence, Kamala faced significant obstacles when she sought admission to the Indian Institute of Science (IISc) in Bangalore. Dr. C V Raman, who was against admitting female students, initially denied her application. After persistent efforts and struggles, Kamala was finally admitted to IISc, albeit with certain conditions. Her dedication and hard work eventually led to the institute opening its doors to female students.
 
 After earning her MSc, Kamala went to Cambridge University, where she worked with eminent scientists and completed her PhD in 1939. Upon returning to India, she worked in Delhi and Coonoor before joining the Biochemistry Department at the Royal Institute of Science in Mumbai after her marriage.
 

@@ -14,7 +14,7 @@ JRD had a deep passion for flying and became one of the first Indians to gain a 
 
 JRD was a vocal supporter of economic liberalization long before it was implemented in India. He also advocated for population control and helped in family planning initiatives. Under his guidance, several institutes like the Tata Institute of Fundamental Research (TIFR) and Tata Memorial Hospital were established to promote science, medicine, and the arts. In 1992, JRD received India’s highest civilian honor, the Bharat Ratna.
 
-__Trivia__ : *JRD Tata was the pilot of the first flight in Indian aviation history, flying from Karachi to Mumbai on October 17, 1932.*
+__Trivia__ : *JRD Tata was the pilot of the first flight in Indian aviation history, flying from Karachi to Bombay on October 15, 1932.*
 
 ---
 
