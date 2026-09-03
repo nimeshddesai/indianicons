@@ -2,6 +2,9 @@
   command   = "bundle exec jekyll build"
   publish   = "_site"
 
+[build.environment]
+  RUBY_VERSION = "3.3.12"
+
 # ── Cache headers ──────────────────────────────────────────────────────────────
 
 [[headers]]

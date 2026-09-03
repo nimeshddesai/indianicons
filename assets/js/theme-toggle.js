@@ -1,18 +1,5 @@
-/* assets/js/theme-toggle.js */
-
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'light-mode';
-    document.body.classList.add(currentTheme);
-
-    if (toggleButton) {
-      toggleButton.addEventListener('click', function() {
-        const newTheme = document.body.classList.contains('light-mode') ? 'dark-mode' : 'light-mode';
-        document.body.classList.remove('light-mode', 'dark-mode');
-        document.body.classList.add(newTheme);
-        document.getElementsByClassName('trigger')[0].classList.remove('light-mode', 'dark-mode');
-        document.getElementsByClassName('trigger')[0].classList.add(newTheme);
-        localStorage.setItem('theme', newTheme);
-      });
-      }
-  });
+/* assets/js/theme-toggle.js
+ * Legacy shim — superseded by assets/js/settings.js.
+ * Kept to avoid 404s from any cached page references.
+ * settings.js now handles all theme + font-size persistence.
+ */

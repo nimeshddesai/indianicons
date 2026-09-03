@@ -10,153 +10,182 @@ layout: default
 
   {{ content }}
 
-  <!-- Introduction -->
-  <section id="introduction">
-    <p>This platform aims to shine a light on unsung Iconic Indians across various fields. These remarkable individuals have made significant contributions but are often forgotten. By sharing their stories, we aim to inspire and educate, bringing these lesser-known heroes into the spotlight.
-    </p>
-    {%- assign about = site.pages | where: "path", 'about.md' | first -%}
-    <p>This blog contains stories of {{ site.posts | size }} such iconic Indians. To know more about our vision, click on 
-      <a href="{{ about.url | relative_url }}">
-        {{ about.title | escape }}
-      </a>
-    </p>
-    <p>
-      <a href="{{ "/search/" | relative_url }}">Search Icons <button type="submit" style="padding: 5px;">🔍</button></a>
-    </p>
-    <p>
-      {%- assign indianheroesquiz = 'https://indianheroesquiz.netlify.app/' -%}
-      Checkout <a href="{{ indianheroesquiz | relative_url }}" target="_blank" rel="noopener noreferrer">Indian Heroes Quiz</a> to test your knowledge.
-    </p>
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- HERO SECTION (Step 1)                               -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="home-hero" aria-label="Site introduction">
+    <h1 class="hero-tagline">Celebrating India's Unsung Icons</h1>
+    <p class="hero-sub">Stories of courage, discovery, and sacrifice — told with respect.</p>
+    <div class="hero-stats" aria-label="Site statistics">
+      <span class="hero-stat">{{ site.posts | size }}+ Stories</span>
+      <span class="hero-stat-sep" aria-hidden="true">·</span>
+      <span class="hero-stat">{{ site.data.categories | size }} Categories</span>
+      <span class="hero-stat-sep" aria-hidden="true">·</span>
+      <span class="hero-stat">Free &amp; Open</span>
+    </div>
+    <form class="hero-search" action="{{ '/search/' | relative_url }}" method="get" role="search">
+      <label for="hero-search-input" class="sr-only">Search icons</label>
+      <input
+        type="text"
+        id="hero-search-input"
+        name="q"
+        placeholder="Search an icon by name…"
+        class="hero-search-input"
+        autocomplete="off"
+      />
+      <button type="submit" class="btn-primary hero-search-btn" aria-label="Search">🔍 Search</button>
+    </form>
   </section>
-  <hr>
-  <!-- Indian Military Heroes Course -->
-  <section id="indian-military-heroes-course">
-    <h2><a href="{{ '/indianmilitaryheroes/' | relative_url }}">Indian Military Heroes Course</a></h2>
-    <p>
-      A six-week self-learning course featuring <strong>thirty stories of Valor, Sacrifice, and Service</strong>
-      from India's bravest soldiers. Each week explores a new chapter of military courage — from the heights of
-      Kargil to silent acts of extraordinary duty.
-    </p>
-    <p><a href="{{ '/indianmilitaryheroes/' | relative_url }}">Start the course &rarr;</a></p>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- CATEGORIES GRID (Step 2) — moved up, card grid      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section id="categories" aria-labelledby="categories-heading">
+    <h2 id="categories-heading" class="section-heading">Browse by Category</h2>
+    <div class="category-grid">
+      {%- for cat in site.data.categories -%}
+        {%- assign cat_page = site.pages | where: "path", cat.path | first -%}
+        {%- if cat_page -%}
+          {%- if cat.slug == "" -%}
+            {%- assign cat_count = site.posts | size -%}
+          {%- else -%}
+            {%- assign cat_count = site.categories[cat.slug] | size -%}
+          {%- endif -%}
+          <a class="category-card" href="{{ cat_page.url | relative_url }}" aria-label="{{ cat.title }}, {{ cat_count }} stories">
+            <span class="category-card__icon" aria-hidden="true">{{ cat.icon }}</span>
+            <span class="category-card__title">{{ cat.title }}</span>
+            <span class="category-card__count">{{ cat_count }} {% if cat_count == 1 %}story{% else %}stories{% endif %}</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
   </section>
-  <hr>
-  <!-- Story of the day -->
-  <section id="story-of-the-day">
-    <h2>Story of the day <a href="#" id="refresh-story" style="font-size: 0.7em; font-weight: normal; text-decoration: none;">🔄 Refresh</a></h2>
-    {% assign random_post = site.posts | sample %}
-    <article id="story-article">
-      <h3><a href="{{ random_post.url }}" id="story-title-link">{{ random_post.title }}</a></h3>
-      <div id="story-content">
-      {% capture random_post_content %}
-      {{ random_post.content | markdownify }}
-      {% endcapture %}
-      {% assign paragraphs = random_post_content | split: "<p>" %}
-      {% for paragraph in paragraphs %}
-      {% if forloop.index0 > 0 and forloop.index0 < 3 %}
-        <p>{{ paragraph }}</p>
-      {% endif %}
-      {% endfor %}
-      </div>
-      <p><a href="{{ random_post.url }}" id="story-read-more">(read the full story)</a></p>
-    </article>
-    <!-- Embed posts data for JavaScript refresh functionality -->
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- STORY OF THE DAY (Steps 5 & 6)                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section id="story-of-the-day" aria-labelledby="story-heading">
+    <h2 id="story-heading" class="section-heading">Story of the Day</h2>
+    <div class="story-card">
+      {% assign random_post = site.posts | sample %}
+      <article id="story-article">
+        <h3 class="story-card__title"><a href="{{ random_post.url }}" id="story-title-link">{{ random_post.title }}</a></h3>
+        <div id="story-content" class="story-card__content">
+          {% capture random_post_content %}
+          {{ random_post.content | markdownify }}
+          {% endcapture %}
+          {% assign paragraphs = random_post_content | split: "<p>" %}
+          {% for paragraph in paragraphs %}
+          {% if forloop.index0 > 0 and forloop.index0 < 3 %}
+            <p>{{ paragraph }}</p>
+          {% endif %}
+          {% endfor %}
+        </div>
+        <div class="story-card__footer">
+          <a href="{{ random_post.url }}" id="story-read-more" class="story-card__read-more">Read the full story →</a>
+          <button id="refresh-story" class="btn-secondary" type="button" aria-label="Show another random story">↻ Another story</button>
+        </div>
+      </article>
+    </div>
+    <!-- Step 6: embed only url+title+date — NO content field -->
     <script>
       (function() {
-        // Get current day and month
         const now = new Date();
         const currentDay = String(now.getDate()).padStart(2, '0');
         const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
-        // Posts data embedded from Jekyll
+
+        // Lightweight index: url, title, day, month only (no content)
         const allPosts = [
           {% for post in site.posts %}
           {
             url: "{{ post.url | relative_url }}",
             title: {{ post.title | jsonify }},
-            content: {{ post.content | markdownify | jsonify }},
-            date: "{{ post.date | date: '%Y-%m-%d' }}",
             day: "{{ post.date | date: '%d' }}",
             month: "{{ post.date | date: '%m' }}"
           }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ];
 
-        // Filter posts matching current day and month
-        const matchingPosts = allPosts.filter(post =>
-          post.day === currentDay && post.month === currentMonth
-        );
+        const matchingPosts = allPosts.filter(p => p.day === currentDay && p.month === currentMonth);
 
-        // Function to get random post based on the logic
         function getRandomPost() {
-          const postsToUse = matchingPosts.length > 0 ? matchingPosts : allPosts;
-          return postsToUse[Math.floor(Math.random() * postsToUse.length)];
-        }
-        // Function to extract image and paragraphs matching Jekyll logic
-        function extractContent(content) {
-          const tempDiv = document.createElement('div');
-          tempDiv.innerHTML = content;
-
-          let result = '';
-
-          // Extract image (first img tag)
-          const images = tempDiv.querySelectorAll('img');
-          if (images.length > 0) {
-            result += images[0].outerHTML;
-          }
-          // Extract paragraphs matching Jekyll logic (2nd and 3rd paragraphs)
-          const paragraphs = tempDiv.querySelectorAll('p');
-          // Match Jekyll logic: forloop.index0 > 0 and < 3 means indices 1 and 2
-          for (let i = 1; i < Math.min(2, paragraphs.length); i++) {
-            result += paragraphs[i].outerHTML;
-          }
-
-          return result;
+          const pool = matchingPosts.length > 0 ? matchingPosts : allPosts;
+          return pool[Math.floor(Math.random() * pool.length)];
         }
 
-        // Function to refresh the story
-        function refreshStory() {
-          const randomPost = getRandomPost();
-          const titleLink = document.getElementById('story-title-link');
-          const readMoreLink = document.getElementById('story-read-more');
+        // Fetch a post page and extract the first two content paragraphs
+        function fetchAndRenderStory(post) {
           const contentDiv = document.getElementById('story-content');
-          if (titleLink && readMoreLink && contentDiv) {
-            titleLink.textContent = randomPost.title;
-            titleLink.href = randomPost.url;
-            readMoreLink.href = randomPost.url;
-            contentDiv.innerHTML = extractContent(randomPost.content);
-          }
+          const titleLink  = document.getElementById('story-title-link');
+          const readMore   = document.getElementById('story-read-more');
+
+          titleLink.textContent = post.title;
+          titleLink.href = post.url;
+          readMore.href = post.url;
+          contentDiv.innerHTML = '<p class="story-loading">Loading…</p>';
+
+          fetch(post.url)
+            .then(function(res) { return res.text(); })
+            .then(function(html) {
+              const doc = new DOMParser().parseFromString(html, 'text/html');
+              // Try .post-content first, fall back to .page-content
+              const body = doc.querySelector('.post-content') || doc.querySelector('.page-content');
+              if (!body) { contentDiv.innerHTML = ''; return; }
+              const paras = Array.from(body.querySelectorAll('p')).slice(1, 3);
+              contentDiv.innerHTML = paras.map(function(p) { return p.outerHTML; }).join('');
+            })
+            .catch(function() { contentDiv.innerHTML = ''; });
         }
-        // Attach refresh handler
+
         document.addEventListener('DOMContentLoaded', function() {
-          const refreshLink = document.getElementById('refresh-story');
-          if (refreshLink) {
-            refreshLink.addEventListener('click', function(e) {
-              e.preventDefault();
-              refreshStory();
+          const btn = document.getElementById('refresh-story');
+          if (btn) {
+            btn.addEventListener('click', function() {
+              fetchAndRenderStory(getRandomPost());
             });
           }
         });
       })();
     </script>
   </section>
-  <hr>
-  <!-- Categories -->
-  <section id="categories">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <h2 class="post-list-heading">{{ page_paths.list_title | default: "Categories" }}</h2>
-    <br>
-    <ul class="post-list">
-      {%- for path in page_paths -%}
-        <li>
-          {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.title and my_page.title != "About" and my_page.title != "Settings" and my_page.title != "Search" -%}
-              <a class="post-link" href="{{ my_page.url | relative_url }}">
-                {{ my_page.title | escape }}
-              </a>
-          {%- endif -%}
-        </li>
-      {%- endfor -%}
-    </ul>
-  </section>
-</div>
 
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- MILITARY COURSE FEATURE CARD (Step 7)               -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section id="indian-military-heroes-course" aria-labelledby="course-heading">
+    <div class="feature-card feature-card--military">
+      <h2 id="course-heading" class="section-heading">
+        <a href="{{ '/indianmilitaryheroes/' | relative_url }}">Indian Military Heroes Course</a>
+      </h2>
+      <div class="feature-card__badges" aria-label="Course details">
+        <span class="badge">📅 6 Weeks</span>
+        <span class="badge">🎖️ 30 Stories</span>
+        <span class="badge">📖 Self-paced</span>
+      </div>
+      <p>
+        A six-week self-learning course featuring <strong>thirty stories of Valor, Sacrifice, and Service</strong>
+        from India's bravest soldiers. Each week explores a new chapter of military courage — from the heights of
+        Kargil to silent acts of extraordinary duty.
+      </p>
+      <a href="{{ '/indianmilitaryheroes/' | relative_url }}" class="btn-primary">Start the course →</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- INTRODUCTION / ABOUT BLURB (trimmed, links intact)  -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section id="introduction" aria-labelledby="intro-heading">
+    <h2 id="intro-heading" class="section-heading">About This Site</h2>
+    <p>India's remarkable individuals — scientists, soldiers, reformers, artists — have shaped history but are often
+    forgotten. This platform brings their stories into the spotlight to inspire and educate.</p>
+    {%- assign about = site.pages | where: "path", 'about.md' | first -%}
+    {%- assign indianheroesquiz = 'https://indianheroesquiz.netlify.app/' -%}
+    <p class="intro-links">
+      <a href="{{ about.url | relative_url }}">Read our vision →</a>
+      <span class="intro-links__sep" aria-hidden="true">·</span>
+      <a href="{{ indianheroesquiz }}" target="_blank" rel="noopener noreferrer"
+         aria-label="Indian Heroes Quiz — test your knowledge (opens in a new tab)">Take the Quiz ↗</a>
+    </p>
+  </section>
+
+</div>
