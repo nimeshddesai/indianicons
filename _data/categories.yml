@@ -1,0 +1,46 @@
+- title: "All Icons"
+  path: "all.md"
+  icon: "🇮🇳"
+  slug: ""
+
+- title: "Military Heroes"
+  path: "military.md"
+  icon: "⚔️"
+  image: "/images/amar-jawan.svg"
+  slug: "military"
+
+- title: "Kargil War Heroes"
+  path: "kargil-heroes.md"
+  icon: "🏔️"
+  image: "/images/kargil-mountain.svg"
+  slug: "kargil-heroes"
+
+- title: "Freedom Fighters"
+  path: "freedom-fighters.md"
+  icon: "🌿"
+  slug: "freedom-fighters"
+
+- title: "Revolutionaries"
+  path: "revolutionaries.md"
+  icon: "✊"
+  slug: "revolutionaries"
+
+- title: "Social Reformers"
+  path: "social-reformers.md"
+  icon: "🤝"
+  slug: "social-reformers"
+
+- title: "Scientists"
+  path: "scientists.md"
+  icon: "🔬"
+  slug: "scientists"
+
+- title: "Sports"
+  path: "sports.md"
+  icon: "🏅"
+  slug: "sports"
+
+- title: "Luminaries"
+  path: "luminaries.md"
+  icon: "💡"
+  slug: "luminaries"

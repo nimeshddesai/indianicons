@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Amar Jawan — helmet on rifle">
+
+  <!-- ── Pedestal ── -->
+  <rect x="18" y="86" width="64" height="8" rx="3" fill="#8B6914"/>
+  <rect x="26" y="79" width="48" height="9" rx="2" fill="#A07820"/>
+
+  <!-- ── Rifle (barrel pointing up, butt resting on pedestal) ── -->
+  <!-- Stock / butt -->
+  <path d="M46 78 L54 78 L55 68 L45 68 Z" fill="#5a3e28"/>
+  <!-- Receiver body -->
+  <rect x="47" y="44" width="6" height="26" rx="1" fill="#4a4a4a"/>
+  <!-- Trigger guard -->
+  <path d="M47 58 Q44 61 47 64 L53 64 Q56 61 53 58 Z" fill="none" stroke="#4a4a4a" stroke-width="1.5"/>
+  <!-- Barrel -->
+  <rect x="48.5" y="22" width="3" height="24" rx="1" fill="#3a3a3a"/>
+  <!-- Muzzle flash-hider -->
+  <rect x="47.5" y="19" width="5" height="4" rx="1" fill="#3a3a3a"/>
+
+  <!-- ── Combat Helmet sitting on top of barrel ── -->
+  <!-- Helmet dome -->
+  <path d="M50 8 C36 8 32 18 33 24 L67 24 C68 18 64 8 50 8 Z" fill="#4a5e40"/>
+  <!-- Helmet rim -->
+  <rect x="31" y="23" width="38" height="4" rx="2" fill="#3a4e30"/>
+  <!-- Helmet chin-strap hint -->
+  <line x1="33" y1="26" x2="31" y2="30" stroke="#3a4e30" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="67" y1="26" x2="69" y2="30" stroke="#3a4e30" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Subtle camo lines -->
+  <path d="M40 14 Q43 17 40 20" fill="none" stroke="#3a4e30" stroke-width="1" opacity="0.6"/>
+  <path d="M55 12 Q59 15 57 19" fill="none" stroke="#3a4e30" stroke-width="1" opacity="0.6"/>
+
+</svg>

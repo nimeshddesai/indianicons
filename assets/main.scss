@@ -297,6 +297,13 @@ table {
   line-height: 1;
 }
 
+.category-card__icon--img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  display: block;
+}
+
 .category-card__title {
   font-weight: 600;
   font-size: 0.9rem;
@@ -392,6 +399,63 @@ table {
   border-radius: 12px;
   font-size: 0.8rem;
   color: var(--muted);
+}
+
+// ─────────────────────────────────────────────
+// VISION & MISSION SECTION
+// ─────────────────────────────────────────────
+#vision-mission {
+  margin-bottom: 36px;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vm-card {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.vm-card--vision {
+  border-top: 4px solid var(--accent-saffron);
+}
+
+.vm-card--mission {
+  border-top: 4px solid var(--accent-green);
+}
+
+.vm-card__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.vm-card__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.vm-card__text {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.6;
+  margin: 0;
 }
 
 // ─────────────────────────────────────────────
