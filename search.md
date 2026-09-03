@@ -11,11 +11,22 @@ permalink: /search/
 <script>
   let searchIndex = [];
 
+  // Pre-fill input from ?q= query param (used by hero search form on home page)
+  const urlParams = new URLSearchParams(window.location.search);
+  const prefilledQuery = urlParams.get('q') || '';
+  if (prefilledQuery) {
+    document.getElementById('search-input').value = prefilledQuery;
+  }
+
   // Fetch the search index from search.json
   fetch('{{ "/search.json" | relative_url }}')
     .then(response => response.json())
     .then(data => {
       searchIndex = data;
+      // Auto-run search if a query was passed in from the home page
+      if (prefilledQuery) {
+        performSearch();
+      }
     });
 
   function performSearch() {

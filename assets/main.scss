@@ -8,6 +8,69 @@ $base-line-height: 1.55;
 
 @import "minima";
 
+// ─────────────────────────────────────────────
+// Design tokens — light (default) theme
+// Mirrors the heroes-course :root palette so
+// both portals share one source of truth.
+// ─────────────────────────────────────────────
+:root {
+  color-scheme: light;
+
+  /* Brand palette */
+  --saffron:  #FF9933;
+  --navy:     #1B3A6B;
+  --green:    #138808;
+
+  /* Semantic aliases used by components */
+  --accent-saffron: var(--saffron);
+  --accent-navy:    var(--navy);
+  --accent-green:   var(--green);
+
+  /* Surface / text */
+  --ink:     #1f2623;
+  --muted:   #5f6965;
+  --line:    #d8ded8;
+  --paper:   #fbfaf5;
+  --surface: #ffffff;
+
+  /* Shadow */
+  --shadow: 0 18px 44px rgba(31, 38, 35, 0.1);
+
+  /* Font size (overridden by settings JS) */
+  --base-font-size: 16px;
+}
+
+// ─────────────────────────────────────────────
+// Dark theme — same attribute selector as the
+// heroes course so one JS module drives both.
+// ─────────────────────────────────────────────
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Brand palette — dark-adapted */
+  --saffron:  #e8943a;
+  --navy:     #90afd4;
+  --green:    #3daa78;
+
+  /* Keep semantic aliases in sync */
+  --accent-saffron: var(--saffron);
+  --accent-navy:    var(--navy);
+  --accent-green:   var(--green);
+
+  /* Surface / text */
+  --ink:     #e8ebe7;
+  --muted:   #8fa899;
+  --line:    #2e3730;
+  --paper:   #111714;
+  --surface: #1a211d;
+
+  /* Shadow */
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.4);
+}
+
+// ─────────────────────────────────────────────
+// Logo in nav header
+// ─────────────────────────────────────────────
 .site-title::before {
 	content: url("/logo.png");
 	display: inline-block;
@@ -16,6 +79,9 @@ $base-line-height: 1.55;
 	top: 15px;
 }
 
+// ─────────────────────────────────────────────
+// Global button reset
+// ─────────────────────────────────────────────
 button {
     padding: 10px 20px;
 	height: auto;
@@ -31,83 +97,568 @@ table {
 	text-align: justify;
 }
 
-/* Light theme */
+// ─────────────────────────────────────────────
+// Reusable CTA button classes (Step 3)
+// ─────────────────────────────────────────────
+.btn-primary {
+  display: inline-block;
+  padding: 9px 20px;
+  background-color: var(--accent-saffron);
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid var(--accent-saffron);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.15s, color 0.15s;
+
+  &:hover, &:focus {
+    background-color: darken(#FF9933, 10%);
+    border-color: darken(#FF9933, 10%);
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 7px 16px;
+  background-color: transparent;
+  color: var(--accent-saffron);
+  font-weight: 600;
+  font-size: 14px;
+  border: 2px solid var(--accent-saffron);
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color 0.15s, color 0.15s;
+
+  &:hover, &:focus {
+    background-color: var(--accent-saffron);
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+}
+
+// ─────────────────────────────────────────────
+// Screen-reader only utility
+// ─────────────────────────────────────────────
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// ─────────────────────────────────────────────
+// Shared section heading style (Step 3)
+// ─────────────────────────────────────────────
+.section-heading {
+  color: var(--accent-navy);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent-saffron);
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+// ─────────────────────────────────────────────
+// HERO SECTION (Step 1)
+// ─────────────────────────────────────────────
+.home-hero {
+  border-left: 5px solid var(--accent-saffron);
+  padding: 24px 24px 20px;
+  margin-bottom: 36px;
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+}
+
+.hero-tagline {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent-navy);
+  margin-bottom: 6px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+}
+
+.hero-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.hero-stat {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent-navy);
+  background: rgba(31, 58, 107, 0.07);
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.hero-stat-sep {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero-search {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hero-search-input {
+  flex: 1;
+  min-width: 200px;
+  max-width: 420px;
+  padding: 9px 14px;
+  font-size: 15px;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  outline: none;
+
+  &:focus {
+    border-color: var(--accent-saffron);
+    box-shadow: 0 0 0 3px rgba(255,153,51,0.2);
+  }
+}
+
+.hero-search-btn {
+  white-space: nowrap;
+}
+
+// ─────────────────────────────────────────────
+// CATEGORY CARD GRID (Step 2)
+// ─────────────────────────────────────────────
+#categories {
+  margin-bottom: 36px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 380px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-top: 3px solid transparent;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--surface);
+  transition: border-top-color 0.15s, box-shadow 0.15s;
+
+  &:hover, &:focus {
+    border-top-color: var(--accent-saffron);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: var(--ink);
+  }
+}
+
+.category-card__icon {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.category-card__icon--img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  display: block;
+}
+
+.category-card__title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--accent-navy);
+  line-height: 1.3;
+}
+
+.category-card__count {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+// ─────────────────────────────────────────────
+// STORY OF THE DAY CARD (Step 5)
+// ─────────────────────────────────────────────
+#story-of-the-day {
+  margin-bottom: 36px;
+}
+
+.story-card {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent-saffron);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 12px;
+  background: var(--surface);
+}
+
+.story-card__title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.story-card__content {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+.story-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.story-card__read-more {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.story-loading {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.875rem;
+}
+
+// ─────────────────────────────────────────────
+// MILITARY COURSE FEATURE CARD (Step 7)
+// ─────────────────────────────────────────────
+#indian-military-heroes-course {
+  margin-bottom: 36px;
+}
+
+.feature-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.feature-card--military {
+  background: var(--surface);
+  border-left: 5px solid var(--accent-saffron);
+}
+
+.feature-card__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 14px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+// ─────────────────────────────────────────────
+// VISION & MISSION SECTION
+// ─────────────────────────────────────────────
+#vision-mission {
+  margin-bottom: 36px;
+}
+
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vm-card {
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.vm-card--vision {
+  border-top: 4px solid var(--accent-saffron);
+}
+
+.vm-card--mission {
+  border-top: 4px solid var(--accent-green);
+}
+
+.vm-card__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.vm-card__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.vm-card__text {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.6;
+  margin: 0;
+}
+
+// ─────────────────────────────────────────────
+// INTRODUCTION / ABOUT SECTION
+// ─────────────────────────────────────────────
+#introduction {
+  margin-bottom: 36px;
+}
+
+.intro-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.intro-links__sep {
+  color: var(--muted);
+}
+
+// ─────────────────────────────────────────────
+// EXTERNAL LINK INDICATOR (Step 8)
+// Scoped to home and post content only
+// ─────────────────────────────────────────────
+.home a[target="_blank"]::after,
+.post-content a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.7em;
+  vertical-align: super;
+  font-style: normal;
+}
+
+// ─────────────────────────────────────────────
+// Root font-size: reads the CSS variable set by
+// settings.js so A+/A− actually rescales text.
+// Minima compiles a hard px shorthand onto body,
+// so we override both html and body here.
+// ─────────────────────────────────────────────
+html {
+  font-size: var(--base-font-size, 16px);
+}
+
+// Body baseline — uses token variables so both
+// light and dark respond automatically.
 body {
-	text-align: justify;
-	--background-color: #ffffff;
-	--text-color: #000000;
-	--link-color: #1a0dab;
-	--trigger-background-color: #ffffff;
-	--trigger-text-color: #000000;
+  font-size: 1rem;         // relative to html, so it scales with the variable
+  background-color: var(--paper);
+  color: var(--ink);
 }
 
-body.light-mode {
-	background-color: var(--background-color);
-	color: var(--text-color);
+// Minima nav trigger inherits surface colour
+.trigger {
+  background-color: var(--surface);
+  color: var(--ink);
 }
 
-body.light-mode a {
-	color: var(--link-color);
+.trigger a {
+  color: var(--ink);
 }
 
-body.light-mode .trigger{
-	background-color: var(--trigger-background-color);
-	color: var(--trigger-text-color);
+.site-title,
+.site-title a,
+.site-title a:visited {
+  color: var(--ink);
 }
 
-body.light-mode .trigger a {
-	color: var(--trigger-text-color);
+table {
+  background-color: var(--surface);
+  color: var(--ink);
 }
 
-body.light-mode .site-title {
-	background-color: var(--background-color);
-	color: var(--text-color);
+// ─────────────────────────────────────────────
+// Settings gear — sits alongside the minima nav.
+//
+// Desktop (> 600px): site-nav is float:right in
+//   normal flow. Gear floats right beside it with
+//   a matching line-height so it centres vertically.
+//
+// Mobile (≤ 600px): site-nav is position:absolute
+//   top:9px right:15px (36px wide).  Gear mirrors
+//   that, shifted left by 36px + 8px gap = 44px.
+// ─────────────────────────────────────────────
+.settings-wrap {
+  position: relative;   // keeps panel dropdown anchored
+  float: right;
+  // Match site-nav's desktop line-height so gear centres in header
+  // ($base-line-height * $base-font-size * 2.25 = 1.55 * 16 * 2.25 ≈ 55.8px)
+  line-height: 56px;
+  margin-right: 8px;
+  z-index: 5;
+
+  @media (max-width: 600px) {
+    // Pull out of flow to sit beside the absolute-positioned hamburger
+    float: none;
+    position: absolute;
+    top: 9px;
+    // nav is at right:15px and is 36px wide → gear goes right:15px+36px+8px
+    right: 59px;
+    line-height: 1;
+  }
 }
 
-body.light-mode .site-title a {
-	color: var(--text-color);
+.settings-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;  // centres inside the line-height container on desktop
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 120ms, background 120ms;
+  padding: 0;
+  box-shadow: none;
 }
 
-body.light-mode table {
-	background-color: var(--background-color);
-	color: var(--text-color);
+.settings-trigger:hover,
+.settings-trigger[aria-expanded="true"] {
+  color: var(--ink);
+  background: rgba(19, 136, 8, 0.08);
 }
 
-/* Dark theme */
-body.dark-mode {
-	--background-color: #121212;
-	--text-color: #e0e0e0;
-	--link-color: #bb86fc;
-	--trigger-background-color: #1f1f1f;
-	--trigger-text-color: #e0e0e0;
-
-	background-color: var(--background-color);
-	color: var(--text-color);
+.settings-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  min-width: 210px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 10px;
 }
 
-body.dark-mode a {
-	color: var(--link-color);
+.settings-panel[hidden] {
+  display: none;
 }
 
-body.dark-mode .trigger {
-	background-color: var(--trigger-background-color);
-	color: var(--trigger-text-color);
+.settings-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-body.dark-mode .trigger a {
-	color: var(--trigger-text-color);
+.font-size-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-body.dark-mode .site-title {
-	background-color: var(--background-color);
-	color: var(--text-color);
+.settings-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: none;
 }
 
-body.dark-mode .site-title a {
-	color: var(--text-color);
+.settings-btn:hover {
+  background: rgba(19, 136, 8, 0.08);
+  border-color: var(--accent-green);
 }
 
-body.dark-mode table {
-	background-color: var(--background-color);
-	color: var(--text-color);
+.settings-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.font-size-val {
+  flex: 1;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.settings-divider {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2px 0;
+}
+
+.theme-toggle {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8px;
 }
