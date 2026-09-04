@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: "Freedom Fighters"
 permalink: /freedom-fighters/
 ---

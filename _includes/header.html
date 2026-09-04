@@ -22,6 +22,32 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+          <div class="nav-dropdown">
+            <span class="page-link nav-dropdown__toggle">Categories ▾</span>
+            <ul class="nav-dropdown__menu">
+              {%- for cat in site.data.categories -%}
+                {%- assign cat_page = site.pages | where: "path", cat.path | first -%}
+                {%- if cat_page -%}
+              <li>
+                <a class="nav-dropdown__item" href="{{ cat_page.url | relative_url }}">
+                  {%- if cat.image -%}
+                    <img src="{{ cat.image }}" alt="" class="nav-dropdown__cat-img" aria-hidden="true" />
+                  {%- else -%}
+                    <span class="nav-dropdown__cat-icon" aria-hidden="true">{{ cat.icon }}</span>
+                  {%- endif -%}
+                  {{ cat.title }}
+                </a>
+              </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+          <div class="nav-dropdown">
+            <span class="page-link nav-dropdown__toggle">Courses ▾</span>
+            <ul class="nav-dropdown__menu">
+              <li><a class="nav-dropdown__item" href="{{ '/indianmilitaryheroes/' | relative_url }}">Indian Military Heroes</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     {%- endif -%}

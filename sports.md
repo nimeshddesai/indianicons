@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: "Sports Heroes"
 permalink: /sports/
 ---

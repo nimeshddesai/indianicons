@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: "Military Heroes"
 permalink: /military/
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: "Revolutionaries"
 permalink: /revolutionaries/
 ---

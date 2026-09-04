@@ -1,4 +1,22 @@
 ---
 layout: default
 ---
-{{ content }}
+{%- assign cat_data = site.data.categories | where: "path", page.path | first -%}
+<article class="post">
+
+  <header class="post-header cat-hero">
+    {%- if cat_data -%}
+      {%- if cat_data.image -%}
+        <img src="{{ cat_data.image }}" alt="" class="cat-hero__img" aria-hidden="true" />
+      {%- else -%}
+        <span class="cat-hero__icon" aria-hidden="true">{{ cat_data.icon }}</span>
+      {%- endif -%}
+    {%- endif -%}
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>

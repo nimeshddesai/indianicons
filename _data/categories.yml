@@ -18,16 +18,19 @@
 - title: "Freedom Fighters"
   path: "freedom-fighters.md"
   icon: "🌿"
+  image: "/images/freedom-fighters.png"
   slug: "freedom-fighters"
 
 - title: "Revolutionaries"
   path: "revolutionaries.md"
   icon: "✊"
+  image: "/images/revolutionaries.png"
   slug: "revolutionaries"
 
 - title: "Social Reformers"
   path: "social-reformers.md"
   icon: "🤝"
+  image: "/images/reformers.png"
   slug: "social-reformers"
 
 - title: "Scientists"

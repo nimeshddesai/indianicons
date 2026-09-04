@@ -147,12 +147,44 @@ layout: default
           if (btn) {
             btn.addEventListener('click', function() {
               fetchAndRenderStory(getRandomPost());
+              gtag('event', 'story_of_day_refresh', { trigger: 'button_click' });
             });
           }
         });
       })();
     </script>
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // GA4: track search submissions
+      var searchForm = document.querySelector('.hero-search');
+      if (searchForm) {
+        searchForm.addEventListener('submit', function() {
+          gtag('event', 'site_search', {
+            search_term: document.getElementById('hero-search-input').value
+          });
+        });
+      }
+
+      // GA4: track category card clicks
+      document.querySelectorAll('.category-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+          gtag('event', 'category_click', {
+            category_name: card.querySelector('.category-card__title').textContent.trim()
+          });
+        });
+      });
+
+      // GA4: track course CTA clicks
+      var courseBtn = document.querySelector('#indian-military-heroes-course .btn-primary');
+      if (courseBtn) {
+        courseBtn.addEventListener('click', function() {
+          gtag('event', 'course_cta_click', { location: 'home_feature_card' });
+        });
+      }
+    });
+  </script>
 
   <!-- ═══════════════════════════════════════════════════ -->
   <!-- MILITARY COURSE FEATURE CARD (Step 7)               -->
