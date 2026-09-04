@@ -63,10 +63,12 @@
     const { name, moduleId, lessonId } = state.route;
 
     if (name === "module" && moduleId) {
+      maybeFireInProgress();
       renderModulePage(moduleId, lessonId);
       return;
     }
     if (name === "certificate") {
+      maybeFireInProgress();
       renderCertificate();
       return;
     }
@@ -84,14 +86,31 @@
   function loadProgress() {
     try {
       return JSON.parse(localStorage.getItem(storageKey)) ||
-        { completed: {}, scores: {}, reflections: {}, moduleQuizScores: {} };
+        { completed: {}, scores: {}, reflections: {}, moduleQuizScores: {}, enrolled: false };
     } catch {
-      return { completed: {}, scores: {}, reflections: {}, moduleQuizScores: {} };
+      return { completed: {}, scores: {}, reflections: {}, moduleQuizScores: {}, enrolled: false };
     }
   }
 
   function saveProgress() {
     localStorage.setItem(storageKey, JSON.stringify(state.progress));
+  }
+
+  // ─── GA4 lifecycle events ─────────────────────────────────────────────────
+
+  // Fires once per session when a returning user has partial progress.
+  // Uses a sessionStorage flag so it fires at most once per browser tab session.
+  function maybeFireInProgress() {
+    const done = completedCount();
+    const total = allLessons().length;
+    if (done > 0 && done < total && !sessionStorage.getItem("ga_inprogress_fired")) {
+      sessionStorage.setItem("ga_inprogress_fired", "1");
+      gtag("event", "course_in_progress", {
+        stories_completed: done,
+        stories_total: total,
+        percent_complete: Math.round((done / total) * 100)
+      });
+    }
   }
 
   function allLessons() {
@@ -383,6 +402,17 @@
   }
 
   function bindLesson(mod, lesson) {
+    // GA4: fire course_enrol the very first time the user opens any lesson.
+    // The enrolled flag is persisted in localStorage so it fires only once ever.
+    if (!state.progress.enrolled) {
+      state.progress.enrolled = true;
+      saveProgress();
+      gtag("event", "course_enrol", {
+        first_module: mod.title,
+        first_lesson: lesson.hero
+      });
+    }
+
     byId("completeLesson").addEventListener("click", () => {
       state.progress.completed[lesson.id] = true;
       saveProgress();
@@ -626,6 +656,12 @@
     if (btn) {
       btn.addEventListener("click", () => {
         const name = byId("learnerName").value.trim() || "A dedicated learner";
+        // GA4: fire course_complete when the learner generates their certificate
+        gtag("event", "course_complete", {
+          learner_name: name,
+          stories_completed: completedCount(),
+          modules_completed: coreModules().filter(m => isModuleQuizDone(m.id)).length
+        });
         const today = new Date().toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
         byId("certificatePreview").innerHTML = `
           <p class="eyebrow">Certificate of Completion</p>
