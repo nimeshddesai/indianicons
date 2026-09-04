@@ -10,6 +10,30 @@ layout: default
       alert('Failed to copy link: ', err);
     });
   }
+
+  // GA4: fire story_view immediately when the page loads
+  gtag('event', 'story_view', {
+    story_title: {{ page.title | jsonify }},
+    story_category: {{ page.categories | first | jsonify }},
+    story_url: '{{ page.url | relative_url }}'
+  });
+
+  // GA4: fire story_read_complete when the reader reaches the end of the article
+  document.addEventListener('DOMContentLoaded', function() {
+    var article = document.querySelector('.post-content');
+    if (article && article.lastElementChild) {
+      var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting) {
+          gtag('event', 'story_read_complete', {
+            story_title: {{ page.title | jsonify }},
+            story_category: {{ page.categories | first | jsonify }}
+          });
+          observer.disconnect();
+        }
+      }, { threshold: 1.0 });
+      observer.observe(article.lastElementChild);
+    }
+  });
 </script>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">

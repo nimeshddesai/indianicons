@@ -386,6 +386,13 @@
     byId("completeLesson").addEventListener("click", () => {
       state.progress.completed[lesson.id] = true;
       saveProgress();
+      gtag("event", "course_story_complete", {
+        week_number: mod.week,
+        module_id: mod.id,
+        module_title: mod.title,
+        story_hero: lesson.hero,
+        lesson_id: lesson.id
+      });
       renderModulePage(mod.id, lesson.id);
     });
 
@@ -395,6 +402,15 @@
       if (result.correct === result.total) {
         state.progress.completed[lesson.id] = true;
         saveProgress();
+        gtag("event", "course_story_quiz_passed", {
+          week_number: mod.week,
+          module_id: mod.id,
+          module_title: mod.title,
+          story_hero: lesson.hero,
+          lesson_id: lesson.id,
+          score: result.correct,
+          total: result.total
+        });
         // Re-render so the sidebar summary tab unlocks immediately.
         // Restore the feedback message after the DOM is replaced.
         renderModulePage(mod.id, lesson.id);
@@ -494,6 +510,16 @@
       const result = evaluateQuiz("mq", mod.moduleQuiz);
       state.progress.moduleQuizScores[mod.id] = result;
       saveProgress();
+      if (result.correct === result.total) {
+        gtag("event", "course_module_complete", {
+          week_number: mod.week,
+          module_id: mod.id,
+          module_title: mod.title,
+          war: mod.war,
+          score: result.correct,
+          total: result.total
+        });
+      }
       byId("moduleQuizFeedback").textContent =
         result.correct === result.total
           ? `Outstanding! ${result.correct}/${result.total} — Module badge earned! 🏅`

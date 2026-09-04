@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: "Social Reformers"
 permalink: /social-reformers/
 ---

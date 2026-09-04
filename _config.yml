@@ -31,16 +31,6 @@ facebook_username: IndianHeroesCalendar
 header_pages:
   - all.md
   - search.md
-  - military.md
-  - kargil-heroes.md
-  - freedom-fighters.md
-  - revolutionaries.md
-  - social-reformers.md
-  - scientists.md
-  - sports.md
-  - artists.md
-  - writers.md
-  - luminaries.md
   - about.md
 
 # Build settings
